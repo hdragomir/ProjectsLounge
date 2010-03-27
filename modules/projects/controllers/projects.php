@@ -37,7 +37,7 @@ class Projects_Controller extends Template_Controller{
         } else {
             
             $this->template->content = new View( 'projects/add' );
-            $this->template->content->project_types = projects_utils::get_poject_types_dropdown_array();
+            $this->template->content->project_types = Projects_utils::get_poject_types_dropdown_array();
         }
     }
     

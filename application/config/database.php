@@ -1,12 +1,13 @@
 <?php defined('SYSPATH') OR die('No direct access allowed.');
+
 $config['default'] = array(
     'benchmark'     => TRUE,
     'persistent'    => FALSE,
     'connection'    => array(
         'type'     => 'mysql',
-        'user'     => 'projectslounge',
-        'pass'     => 'valiugteam',
-        'host'     => 'mysql.projectslounge.com',
+        'user'     => 'root',
+        'pass'     => 'root',
+        'host'     => 'localhost',
         'port'     => FALSE,
         'socket'   => FALSE,
         'database' => 'projectslounge'
