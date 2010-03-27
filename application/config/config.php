@@ -119,6 +119,7 @@ $config['modules'] = array
     MODPATH . 'auth',      // Authentication
     MODPATH . 'projects',
     MODPATH . 'profiles',
+
     MODPATH . 'tags'
     // MODPATH.'kodoc',     // Self-generating documentation
     // MODPATH.'gmaps',     // Google Maps integration

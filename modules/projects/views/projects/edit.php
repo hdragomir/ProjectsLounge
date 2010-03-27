@@ -12,6 +12,12 @@
 
 <?php echo form::close_fieldset(); ?>
 
+
+<?php echo form::open_fieldset( array( 'class' => 'additional-users' ) ); ?>
+    <?php echo form::input( 'additional_user_emails[]' ); ?>
+<?php echo form::close_fieldset(); ?>
+
+
 <?php echo form::submit( array( 'value' => 'Save' ) ); ?>
 
 <?php echo form::close(); ?>

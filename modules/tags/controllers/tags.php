@@ -42,4 +42,5 @@ class Tags_Controller extends Template_Controller{
             $this->template->content = new View( 'tags/add' );
         }
     }
+
 }
