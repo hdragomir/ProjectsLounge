@@ -7,9 +7,11 @@ class Homepage_Controller extends Template_Controller {
 
     public function index(){
 
-        if( ! Auth::instance()->logged_in( 'login' ) )
+        if( ! Auth::instance()->logged_in() )
             Auth::instance()->force_login( 'user@projectslounge.com' );
-        var_export( Auth::instance()->get_user()->projects );
+        
+        $this->template->content = new View( 'homepage' );
+        
     }
 
 

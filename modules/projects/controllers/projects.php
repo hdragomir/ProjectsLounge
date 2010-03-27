@@ -13,13 +13,15 @@ class Projects_Controller extends Template_Controller{
     
     public function project( $id ){
         
-        $this->template->content = ORM::factory( 'project', $id )->name;
+        $data = array();
+        
+        $data[ 'project' ] = ORM::factory( 'project', $id );
+        
+        $this->template->content = View::factory( 'projects/view', $data );
     }
     
     
     public function __call( $method, $arguments ){
-        
-        echo 'faling back';
         
         return $this->project( $method );
     }
@@ -27,19 +29,16 @@ class Projects_Controller extends Template_Controller{
     
     public function add(){
         
-        if( $post = $this->input->post() ){
+        if( $post = $this->input->post( 'project' ) ){
             
-            $project = Projects_utils::createProject( $post[ 'project' ] )->save();
+            $project = projects_utils::create_project( $post );
             url::redirect( $project->url );
             exit;
         } else {
             
             $this->template->content = new View( 'projects/add' );
-            $this->template->content->project_types = projects_utils_Core::get_poject_types_dropdown_array();
+            $this->template->content->project_types = projects_utils::get_poject_types_dropdown_array();
         }
     }
-    
-    
-    
     
 }
