@@ -7,6 +7,10 @@ class Projects_Controller extends Template_Controller{
     
     public function index(){
         
+        $projects = ORM::factory( 'project' )->find_all();
+        $this->template->content = View::factory( 'projects/list' )
+            ->bind( 'projects', $projects )
+            ->bind( 'user', Auth::instance()->get_user() );
         
     }
     
@@ -16,7 +20,7 @@ class Projects_Controller extends Template_Controller{
         $data = array();
         
         $data[ 'project' ] = ORM::factory( 'project', $id );
-        
+        $data[ 'user' ] = Auth::instance()->get_user();
         $this->template->content = View::factory( 'projects/view', $data );
     }
     

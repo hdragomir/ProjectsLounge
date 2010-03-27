@@ -30,4 +30,20 @@ class Project_Model extends ORM{
         $role->role = $role_string;
         $role->save();
     }
+    
+    public function user_can( $user, $action ){
+        
+        if( 'edit' == $action )
+            return $this->has_user( $user );
+        
+    }
+    
+    
+    public function has_user( User_Model $user ){
+        
+        return 1 == ORM::factory( 'project_user_role' )
+                        ->where( 'project_id', $this->id )
+                        ->where( 'user_id', $user->id )
+                        ->count_all();
+    }
 }
