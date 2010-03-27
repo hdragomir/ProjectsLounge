@@ -25,4 +25,9 @@ class Profiles_Controller extends Template_Controller{
         
         $this->template->content = View::factory( 'profiles/profile', compact( 'profile' ) );
     }
+    
+    public function login(){
+        
+        
+    }
 }

@@ -1,0 +1,350 @@
+/* CSS reset by Eric Meyer
+-------------------------------------------------------------------------------------------------------------- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.clear {
+	clear: both;
+}
+
+/* Layout
+-------------------------------------------------------------------------------------------------------------- */
+body {
+	background: #fff url("../images/bg.gif") repeat-x;
+	color: #333;
+	font: normal 14px/1.5 Tahoma, Arial, sans-serif;
+}
+#wrapper {
+	position: relative;
+	width: 960px;
+	margin: 0 auto;
+}
+
+/* Typography
+-------------------------------------------------------------------------------------------------------------- */
+p {
+	margin: 0 0 20px;
+}
+a {
+	text-decoration: none;
+	color: #77388e;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+h1 {
+	font-size: 26px;
+    line-height: 26px;
+	margin-top: 10px;
+}
+h2 {
+	font-size: 22px;
+    line-height: 22px;
+	margin-top: 10px;
+}
+h3 {
+	font-size: 18px;
+    line-height: 18px;
+	margin-top: 8px;
+}
+h1, h2, h3 {
+	margin-bottom: 10px;
+	font-weight: normal;
+}
+
+/* Awesome buttons (inspired by zurb)
+-------------------------------------------------------------------------------------------------------------- */
+button.awesome,
+.btn.awesome {
+	background: #632a76;
+	display: inline-block;
+	padding: 8px 16px 8px;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+	border-bottom: 1px solid rgba(0,0,0,0.25);
+	position: relative;
+	cursor: pointer;
+	font-family: "Trebuchet MS", Arial, sans-serif;
+	text-align: center;
+	font-style: italic;
+	text-decoration: none;
+	font-weight: bold;
+	line-height: 1;
+	color: #fff;
+}
+button.awesome:hover,
+.btn.awesome:hover
+{
+	background: #31aad3;
+}
+
+/* Header 
+-------------------------------------------------------------------------------------------------------------- */
+#header {
+	float: left;
+	clear: both;
+	width: 960px;
+	height: 125px;
+	padding-top: 55px;
+}
+#login {
+	display: block;
+	position: absolute;
+	top: 7px;
+	right: 0px;
+	font-size: 12px;
+	color: #fff;
+}
+#search {
+	float: right;
+	width: 286px;
+	height: 25px;
+	padding: 8px 7px 7px;
+	margin-top: 25px;
+	background: url("../images/search_bg.png") no-repeat;
+}
+#search p {
+	margin: 0;
+}
+#search_field {
+	float: left;
+	width: 200px;
+	height: 20px;
+	padding-left: 10px;
+	border: none;
+	background: #fcfcfc;
+	font-size: 12px;
+	color: #999;
+}
+#btn_search {
+	float: right;
+	width: 71px;
+	height: 24px;
+}
+
+/* Nav 
+-------------------------------------------------------------------------------------------------------------- */
+#nav {
+	float: left;
+	width: 960px;
+	height: 61px;
+	background: url("../images/nav_bg.png") repeat-x;
+}
+#nav li {
+	float: left;
+	height: 61px;
+}
+#nav li.first {
+	background: url("../images/tab_left_bg.png") no-repeat;
+}
+#nav li a {
+	display: block;
+	float: left;
+	height: 35px;
+	padding: 26px 25px 0 5px;
+	font-size: 16px;
+	background: url("../images/tab_bg.png") 100% 0% no-repeat;
+	color: #333;
+	text-shadow: #fff 0px 1px 1px;
+}
+#nav li.first a {
+	padding-left: 12px;
+}
+#nav li.last {
+	float: right;
+	width: 170px;
+	background: url("../images/btn_add_project.png") no-repeat;
+}
+#nav li.last a {
+	width: 160px;
+	padding: 23px 10px 0 0;
+	background: none;
+	font-family: "Trebuchet MS", Arial, sans-serif;
+	text-align: center;
+	font-style: italic;
+	font-weight: bold;
+	color: #fff;
+	text-shadow: #000 0px 1px 1px;
+}
+
+/* Homepage 
+-------------------------------------------------------------------------------------------------------------- */
+#welcome {
+	float: left;
+	padding-bottom: 10px;
+	background: url("../images/welcome_bg.png") 0% 100% no-repeat;
+}
+.section {
+	float: left;
+	width: 960px;
+	background: url("../images/section_bg.png") repeat-y;
+}
+#welcome .section {
+	width: 940px;
+	padding: 10px;
+}
+#welcome h1 {
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+#featured {
+	float: left;
+	width: 960px;
+	padding-bottom: 14px;
+	background: url("../images/featured_bg.png") 0% 100% no-repeat;
+	margin: 0 0 20px;
+}
+.section2 {
+	float: left;
+	width: 960px;
+	background: url("../images/section2_bg.png") repeat-y;
+}
+#featured .section2 {
+	width: 940px;
+	padding: 10px;
+}
+#featured_projects {
+	float: left;
+	width: 560px;
+	padding-right: 80px; 
+}
+#featured_projects li {
+	float: left;
+	display: block;
+	margin: 0 0 20px;
+}
+#featured_projects .project_thumb {
+	float: left;
+	width: 212px;
+	padding: 3px;
+	border: 1px solid #ddd;
+	margin-right: 10px;
+}
+#featured_projects h3 {
+	font-weight: bold;
+}
+#featured_members {
+	float: left;
+	width: 300px;
+}
+#reasons {
+	float: left;
+	width: 800px;
+	margin: 0 0 20px;
+}
+#reasons h2 {
+	margin-bottom: 20px;
+}
+#reasons p {
+	float: left;
+	width: 800px;
+	height: 61px;
+	margin: 0 0 20px;
+}
+#reasons .reason {
+	width: 710px;
+	height: 36px;
+	padding-top: 25px;
+	padding-left: 90px;
+	font-size: 16px;
+	font-weight: bold;
+}
+#reasons #nr_1 {
+	background: url("../images/nr_1.png") no-repeat;
+}
+#reasons #nr_2 {
+	background: url("../images/nr_2.png") no-repeat;
+}
+#reasons #nr_3 {
+	background: url("../images/nr_3.png") no-repeat;
+}
+#reasons #nr_4 {
+	background: url("../images/nr_4.png") no-repeat;
+}
+#reasons #nr_5 {
+	background: url("../images/nr_5.png") no-repeat;
+	margin-bottom: 40px;
+}
+#reasons .btn {
+	margin-bottom: 30px;
+	font-size: 17px;
+}
+
+
+/* Content 
+-------------------------------------------------------------------------------------------------------------- */
+#content {
+	float: left;
+	width: 960px;
+	height: 170px;
+}
+
+/* Footer 
+-------------------------------------------------------------------------------------------------------------- */
+#footer_wrapper {
+	clear: both;
+	height: 45px;
+	background: url("../images/footer_bg.gif") repeat-x;
+	margin: 0;
+}
+#footer {
+	height: 32px;
+	padding-top: 13px;
+	width: 960px;
+	margin: 0 auto;
+	font-size: 12px;
+	color: #fff;
+}
+#footer a {
+	color: #fff;
+}
+#footer p {
+	float: right;
+	width: 500px;
+	text-align: right;
+	margin: 0;
+}

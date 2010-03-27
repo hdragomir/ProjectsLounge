@@ -10,7 +10,7 @@ class Projects_Controller extends Template_Controller{
         $projects = ORM::factory( 'project' )->find_all();
         $this->template->content = View::factory( 'projects/list' )
             ->bind( 'projects', $projects )
-            ->bind( 'user', Auth::instance()->get_user() );
+            ->bind( 'user', User_Model::current() );
         
     }
     
@@ -18,9 +18,8 @@ class Projects_Controller extends Template_Controller{
     public function project( $id ){
         
         $data = array();
-        
         $data[ 'project' ] = ORM::factory( 'project', $id );
-        $data[ 'user' ] = Auth::instance()->get_user();
+        $data[ 'user' ] = User_Model::current();
         $this->template->content = View::factory( 'projects/view', $data );
     }
     
@@ -33,10 +32,10 @@ class Projects_Controller extends Template_Controller{
     
     public function add(){
         
-        $user = Auth::instance()->get_user();
+        $user = User_Model::current();
         
         if( $post = $this->input->post( 'project' ) ){
-            if( ! $user )
+            if( ! $user->loaded )
                 return $this->template->content = 'You need to be logged in';
             
             $project = ORM::factory( 'project' );
@@ -64,9 +63,9 @@ class Projects_Controller extends Template_Controller{
     
     public function edit( $id ){
 
-        $user = Auth::instance()->get_user();
+        $user = User_Model::current();
         $project = ORM::factory( 'project', $id );
-        if( ! $project->user_can( $user, 'edit' ) )
+        if( ! $user->loaded && $project->user_can( $user, 'edit' ) )
             return $this->template->content = 'oh, come on!';
         
         if( $post = $this->input->post( 'project' ) ){

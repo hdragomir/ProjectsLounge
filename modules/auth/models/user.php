@@ -21,4 +21,15 @@ class User_Model extends Auth_User_Model {
             ->where( 'user_id', $this->id )
             ->find_all()->current();
     }
+    
+    
+    public static function current(){
+        $user = Auth::instance()->get_user();
+        if( ! $user ){
+            $user = new self;
+            $user->username = 'visitor';
+        }
+        
+        return $user;
+    }
 } // End User Model

@@ -1,3 +1,6 @@
 <?php
 
-$config['_default'] = 'homepage';
+$config = array(
+    '_default' => 'homepage',
+    '(about|contact)' => 'homepage/static/$1'
+);
