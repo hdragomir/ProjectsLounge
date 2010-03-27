@@ -18,10 +18,13 @@ class User_Model extends Auth_User_Model {
         if( ! ( $project instanceof Project_Model ) )
             $project = ORM::factory( 'project', $project );
         
-        return ORM::factory( 'project_user_role' )
+        
+        
+        $role = ORM::factory( 'project_user_role' )
             ->where( 'project_id', $project->id )
             ->where( 'user_id', $this->id )
-            ->find();
-        
+            ->find_all()->current();
+            
+        return $role;
     }
 } // End User Model

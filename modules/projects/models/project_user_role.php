@@ -5,12 +5,11 @@ class Project_user_role_Model extends ORM{
     protected $table_name = 'projects_users';
     protected $belongs_to = array( 'project', 'user' );
     protected $sorting = array( 'project_id' => 'asc' );
-    protected $primary_val = 'role';
     
     
     public function __toString(){
-        
-        return "$this->{$this->primary_val}";
+
+        return $this->role;
     }
     
     

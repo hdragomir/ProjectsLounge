@@ -30,12 +30,7 @@ class Projects_Controller extends Template_Controller{
     public function add(){
         
         if( $post = $this->input->post( 'project' ) ){
-            
-            
-            
             $user = Auth::instance()->get_user();
-            
-            
             if( ! $user )
                 return $this->template->content = 'You need to be logged in';
             
@@ -47,15 +42,13 @@ class Projects_Controller extends Template_Controller{
                 ->add_rules( 'name', 'required' )
                 ->add_rules( 'project_type_id', 'required', 'numeric' );
             
-            
-            
-            
             if( !$project->validate( $validation, true ) )
                 return $this->template->content = Kohana::debug( $validation->errors() );
 
-            $project->set_user_roles( array( $user->id => 'js' ) );
+            $post_user_data = $this->input->post( 'user' );
             
-            $this->template->content = 'gah';
+            if( ! empty( $post_user_data[ 'role' ] ) )
+                $project->set_user_roles( array( $user->id => $post_user_data[ 'role' ] ) );
             
             return url::redirect( $project->url );
             

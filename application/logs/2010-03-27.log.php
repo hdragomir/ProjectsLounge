@@ -89,3 +89,67 @@
 2010-03-27 14:05:43 +02:00 --- debug: Database Library initialized
 2010-03-27 14:05:43 +02:00 --- debug: Session Library initialized
 2010-03-27 14:05:43 +02:00 --- debug: Auth Library loaded
+2010-03-27 15:11:42 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 15:11:42 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 15:11:42 +02:00 --- debug: Database Library initialized
+2010-03-27 15:11:53 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 15:11:53 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 15:11:53 +02:00 --- debug: Database Library initialized
+2010-03-27 15:11:58 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 15:11:58 +02:00 --- debug: Session Cookie Driver Initialized
+2010-03-27 15:11:58 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 15:11:58 +02:00 --- debug: Database Library initialized
+2010-03-27 15:11:58 +02:00 --- debug: Session Library initialized
+2010-03-27 15:11:58 +02:00 --- debug: Auth Library loaded
+2010-03-27 15:14:41 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 15:14:41 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 15:14:41 +02:00 --- debug: Database Library initialized
+2010-03-27 15:15:18 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 15:15:18 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 15:15:18 +02:00 --- debug: Database Library initialized
+2010-03-27 15:15:52 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 15:15:52 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 15:15:52 +02:00 --- debug: Database Library initialized
+2010-03-27 15:16:00 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 15:16:00 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 15:16:00 +02:00 --- debug: Database Library initialized
+2010-03-27 15:17:19 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 15:17:19 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 15:17:19 +02:00 --- debug: Database Library initialized
+2010-03-27 15:17:40 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 15:17:40 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 15:17:40 +02:00 --- debug: Database Library initialized
+2010-03-27 15:17:40 +02:00 --- error: Uncaught PHP Error: Undefined variable: role in file E:/xampp/htdocs/ProjectsLounge/modules/auth/models/user.php on line 28
+2010-03-27 15:17:46 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 15:17:46 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 15:17:46 +02:00 --- debug: Database Library initialized
+2010-03-27 15:18:29 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 15:18:29 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 15:18:29 +02:00 --- debug: Database Library initialized
+2010-03-27 15:18:50 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 15:18:50 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 15:18:50 +02:00 --- debug: Database Library initialized
+2010-03-27 15:20:04 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 15:20:04 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 15:20:04 +02:00 --- debug: Database Library initialized
+2010-03-27 15:20:16 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 15:20:16 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 15:20:16 +02:00 --- debug: Database Library initialized
+2010-03-27 15:20:28 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 15:20:28 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 15:20:28 +02:00 --- debug: Database Library initialized
+2010-03-27 15:20:59 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 15:20:59 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 15:20:59 +02:00 --- debug: Database Library initialized
+2010-03-27 15:22:35 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 15:22:35 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 15:22:35 +02:00 --- debug: Database Library initialized
+2010-03-27 15:22:46 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 15:22:46 +02:00 --- debug: Session Cookie Driver Initialized
+2010-03-27 15:22:46 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 15:22:46 +02:00 --- debug: Database Library initialized
+2010-03-27 15:22:46 +02:00 --- debug: Session Library initialized
+2010-03-27 15:22:46 +02:00 --- debug: Auth Library loaded
+2010-03-27 15:22:47 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 15:22:47 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 15:22:47 +02:00 --- debug: Database Library initialized
