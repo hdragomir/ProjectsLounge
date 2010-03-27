@@ -21,15 +21,13 @@ class Project_Model extends ORM{
     }
     
     
-    public function add_user_role( $user, $role ){
+    public function add_user_role( $user, $role_string ){
         
         $user = ORM::factory( 'user', $user );
         $role = ORM::factory( 'project_user_role' );
         $role->user = $user;
         $role->project = $this;
-        $role->role = $role;
+        $role->role = $role_string;
         $role->save();
-        
-        var_export( $role );
     }
 }

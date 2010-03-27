@@ -1,5 +1,7 @@
 RewriteEngine On
 
+RewriteBase /ProjectsLounge/
+
 RewriteRule ^(application|modules|system) - [F,L]
 
 RewriteCond %{REQUEST_FILENAME} !-f

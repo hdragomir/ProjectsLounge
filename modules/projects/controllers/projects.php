@@ -37,7 +37,7 @@ class Projects_Controller extends Template_Controller{
             
             
             if( ! $user )
-                exit( 'You need to be logged in' );
+                return $this->template->content = 'You need to be logged in';
             
             $project = ORM::factory( 'project' );
         
@@ -48,17 +48,16 @@ class Projects_Controller extends Template_Controller{
                 ->add_rules( 'project_type_id', 'required', 'numeric' );
             
             
-            if( !$project->validate( $validation, true ) )
-                var_export( $validation->errors() );
-                
-            echo Kohana::debug( $project, $user );
-                
-            $project->set_user_roles( array( $user->id => 'js' ) );
             
+            
+            if( !$project->validate( $validation, true ) )
+                return $this->template->content = Kohana::debug( $validation->errors() );
+
+            $project->set_user_roles( array( $user->id => 'js' ) );
             
             $this->template->content = 'gah';
             
-            //url::redirect( $project->url );
+            return url::redirect( $project->url );
             
         } else {
             
