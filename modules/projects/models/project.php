@@ -25,6 +25,7 @@ class Project_Model extends ORM{
         
         $user = ORM::factory( 'user', $user );
         if( $this->has_user( $user ) ){
+            
             $role = $user->role_for_project( $this );
         } else {
             $role = ORM::factory( 'project_user_role' );

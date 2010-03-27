@@ -11,9 +11,12 @@
                   form::input( 'user[role]', $user->role_for_project( $project ) ); ?></p>
 
 <?php echo form::close_fieldset(); ?>
-
-<?php /* todo list current members */ ?>
-
+<?php
+foreach( $project->users as $member ):
+    
+    echo $member->email, ' role: ', $member->role_for_project( $project ), '<br />';
+endforeach;
+?>
 <?php echo form::open_fieldset( array( 'class' => 'additional-users' ) ); ?>
     <?php echo form::legend( 'Additional Members' ); ?>
     <?php echo form::input( array( 'name' => 'additional_user_emails[]',

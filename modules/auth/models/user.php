@@ -4,7 +4,7 @@ class User_Model extends Auth_User_Model {
     
     public function save(){
         
-        if( empty( $this->username ) )
+        if( empty( $this->username ) && ! empty( $this->id ) )
             $this->username = $this->id;
         
         return parent::save();

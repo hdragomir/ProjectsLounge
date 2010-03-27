@@ -78,15 +78,16 @@ class Projects_Controller extends Template_Controller{
             
             if( $additional_user_emails = $this->input->post( 'additional_user_emails' ) ){
                 $additional_user_roles = $this->input->post( 'additional_user_roles' );
-                
+                foreach( $additional_user_emails as $email )
+                    Profiles_utils::reserve_email_if_available( $email );
                 $additional_users = array_combine( $additional_user_emails, $additional_user_roles );
                 
                 $project->add_user_roles( $additional_users );
                 echo 'a';
             }
             
-            //url::redirect( $project->url );
-            $this->template->content = '';
+            url::redirect( $project->url );
+            
         } else {
             $this->template->content = View::factory( 'projects/edit' )
                                     ->bind( 'project_types', Projects_utils::get_project_types_dropdown_array() )

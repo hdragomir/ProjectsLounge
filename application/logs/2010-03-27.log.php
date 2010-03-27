@@ -968,3 +968,97 @@
 2010-03-27 18:33:53 +02:00 --- debug: Session Cookie Driver Initialized
 2010-03-27 18:33:53 +02:00 --- debug: Session Library initialized
 2010-03-27 18:33:53 +02:00 --- debug: Auth Library loaded
+2010-03-27 18:35:49 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 18:35:49 +02:00 --- debug: Session Cookie Driver Initialized
+2010-03-27 18:35:49 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 18:35:49 +02:00 --- debug: Database Library initialized
+2010-03-27 18:35:49 +02:00 --- debug: Session Library initialized
+2010-03-27 18:35:49 +02:00 --- debug: Auth Library loaded
+2010-03-27 18:41:11 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 18:41:11 +02:00 --- debug: Session Cookie Driver Initialized
+2010-03-27 18:41:11 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 18:41:11 +02:00 --- debug: Database Library initialized
+2010-03-27 18:41:11 +02:00 --- debug: Session Library initialized
+2010-03-27 18:41:11 +02:00 --- debug: Auth Library loaded
+2010-03-27 18:41:11 +02:00 --- error: Uncaught Kohana_Database_Exception: There was an SQL error: Duplicate entry '0-0' for key 'PRIMARY' - INSERT INTO `projects_users` (`role`) VALUES ('hh') in file E:/xampp/htdocs/ProjectsLounge/system/libraries/drivers/Database/Mysql.php on line 371
+2010-03-27 18:41:43 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 18:41:43 +02:00 --- debug: Session Cookie Driver Initialized
+2010-03-27 18:41:43 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 18:41:43 +02:00 --- debug: Database Library initialized
+2010-03-27 18:41:43 +02:00 --- debug: Session Library initialized
+2010-03-27 18:41:43 +02:00 --- debug: Auth Library loaded
+2010-03-27 18:41:44 +02:00 --- error: Uncaught Kohana_Database_Exception: There was an SQL error: Duplicate entry '0-0' for key 'PRIMARY' - INSERT INTO `projects_users` (`role`) VALUES ('hh') in file E:/xampp/htdocs/ProjectsLounge/system/libraries/drivers/Database/Mysql.php on line 371
+2010-03-27 18:43:46 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 18:43:46 +02:00 --- debug: Session Cookie Driver Initialized
+2010-03-27 18:43:46 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 18:43:46 +02:00 --- debug: Database Library initialized
+2010-03-27 18:43:46 +02:00 --- debug: Session Library initialized
+2010-03-27 18:43:46 +02:00 --- debug: Auth Library loaded
+2010-03-27 18:43:46 +02:00 --- error: Uncaught Kohana_Database_Exception: There was an SQL error: Duplicate entry '0-0' for key 'PRIMARY' - INSERT INTO `projects_users` (`role`) VALUES ('hh') in file E:/xampp/htdocs/ProjectsLounge/system/libraries/drivers/Database/Mysql.php on line 371
+2010-03-27 18:50:42 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 18:50:42 +02:00 --- debug: Session Cookie Driver Initialized
+2010-03-27 18:50:42 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 18:50:42 +02:00 --- debug: Database Library initialized
+2010-03-27 18:50:42 +02:00 --- debug: Session Library initialized
+2010-03-27 18:50:42 +02:00 --- debug: Auth Library loaded
+2010-03-27 18:50:49 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 18:50:49 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 18:50:49 +02:00 --- debug: Database Library initialized
+2010-03-27 18:50:49 +02:00 --- debug: Session Cookie Driver Initialized
+2010-03-27 18:50:49 +02:00 --- debug: Session Library initialized
+2010-03-27 18:50:49 +02:00 --- debug: Auth Library loaded
+2010-03-27 18:50:55 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 18:50:55 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 18:50:55 +02:00 --- debug: Database Library initialized
+2010-03-27 18:50:55 +02:00 --- debug: Session Cookie Driver Initialized
+2010-03-27 18:50:55 +02:00 --- debug: Session Library initialized
+2010-03-27 18:50:55 +02:00 --- debug: Auth Library loaded
+2010-03-27 19:01:47 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 19:01:47 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 19:01:47 +02:00 --- debug: Database Library initialized
+2010-03-27 19:01:47 +02:00 --- debug: Session Cookie Driver Initialized
+2010-03-27 19:01:47 +02:00 --- debug: Session Library initialized
+2010-03-27 19:01:47 +02:00 --- debug: Auth Library loaded
+2010-03-27 19:01:48 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 19:01:48 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 19:01:48 +02:00 --- debug: Database Library initialized
+2010-03-27 19:01:48 +02:00 --- debug: Session Cookie Driver Initialized
+2010-03-27 19:01:48 +02:00 --- debug: Session Library initialized
+2010-03-27 19:01:48 +02:00 --- debug: Auth Library loaded
+2010-03-27 19:01:50 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 19:01:50 +02:00 --- debug: Session Cookie Driver Initialized
+2010-03-27 19:01:50 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 19:01:50 +02:00 --- debug: Database Library initialized
+2010-03-27 19:01:50 +02:00 --- debug: Session Library initialized
+2010-03-27 19:01:50 +02:00 --- debug: Auth Library loaded
+2010-03-27 19:02:03 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 19:02:03 +02:00 --- debug: Session Cookie Driver Initialized
+2010-03-27 19:02:03 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 19:02:03 +02:00 --- debug: Database Library initialized
+2010-03-27 19:02:03 +02:00 --- debug: Session Library initialized
+2010-03-27 19:02:03 +02:00 --- debug: Auth Library loaded
+2010-03-27 19:02:03 +02:00 --- error: Uncaught Kohana_Database_Exception: There was an SQL error: Duplicate entry '0' for key 'uniq_username' - INSERT INTO `users` (`email`, `username`) VALUES ('gmail@hdragomir.com', '0') in file E:/xampp/htdocs/ProjectsLounge/system/libraries/drivers/Database/Mysql.php on line 371
+2010-03-27 19:02:43 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 19:02:43 +02:00 --- debug: Session Cookie Driver Initialized
+2010-03-27 19:02:43 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 19:02:43 +02:00 --- debug: Database Library initialized
+2010-03-27 19:02:43 +02:00 --- debug: Session Library initialized
+2010-03-27 19:02:43 +02:00 --- debug: Auth Library loaded
+2010-03-27 19:02:43 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 19:02:43 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 19:02:43 +02:00 --- debug: Database Library initialized
+2010-03-27 19:02:43 +02:00 --- debug: Session Cookie Driver Initialized
+2010-03-27 19:02:43 +02:00 --- debug: Session Library initialized
+2010-03-27 19:02:43 +02:00 --- debug: Auth Library loaded
+2010-03-27 19:02:52 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 19:02:52 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 19:02:52 +02:00 --- debug: Database Library initialized
+2010-03-27 19:02:52 +02:00 --- debug: Session Cookie Driver Initialized
+2010-03-27 19:02:52 +02:00 --- debug: Session Library initialized
+2010-03-27 19:02:52 +02:00 --- debug: Auth Library loaded
+2010-03-27 19:02:54 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 19:02:54 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 19:02:54 +02:00 --- debug: Database Library initialized
+2010-03-27 19:02:54 +02:00 --- debug: Session Cookie Driver Initialized
+2010-03-27 19:02:54 +02:00 --- debug: Session Library initialized
+2010-03-27 19:02:54 +02:00 --- debug: Auth Library loaded
