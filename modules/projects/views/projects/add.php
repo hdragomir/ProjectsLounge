@@ -1,5 +1,5 @@
 
-<?php echo form::open( null, array( 'method' => 'post' ) ); ?>
+<?php echo form::open( null, array( 'method' => 'post', 'class' => 'project-form' ) ); ?>
 <fieldset>
     <legend>Project Type</legend>
     <?php foreach( $project_types as $type_id => $type_name ): ?>

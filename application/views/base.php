@@ -8,6 +8,7 @@
 <meta http-equiv="X-UA-Compatible" content="chrome=1" />
 
 <?php echo html::stylesheet( 'media/css/style.css' ); ?>
+<?php echo html::stylesheet( HTMLPage::$styles ); ?>
 
 </head>
 

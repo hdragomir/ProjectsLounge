@@ -4,6 +4,13 @@ class Projects_Controller extends Template_Controller{
     
     public $template = 'base';
     
+
+    public function __construct(){
+        
+        HTMLPage::add_style( 'projects' );
+        
+        parent::__construct();
+    }
     
     public function index(){
         
