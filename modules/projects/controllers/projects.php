@@ -31,13 +31,39 @@ class Projects_Controller extends Template_Controller{
         
         if( $post = $this->input->post( 'project' ) ){
             
-            $project = projects_utils::create_project( $post );
-            url::redirect( $project->url );
-            exit;
+            
+            
+            $user = Auth::instance()->get_user();
+            
+            
+            if( ! $user )
+                exit( 'You need to be logged in' );
+            
+            $project = ORM::factory( 'project' );
+        
+            $validation = new Validation( $post );
+            
+            $validation
+                ->add_rules( 'name', 'required' )
+                ->add_rules( 'project_type_id', 'required', 'numeric' );
+            
+            
+            if( !$project->validate( $validation, true ) )
+                var_export( $validation->errors() );
+                
+            echo Kohana::debug( $project, $user );
+                
+            $project->set_user_roles( array( $user->id => 'js' ) );
+            
+            
+            $this->template->content = 'gah';
+            
+            //url::redirect( $project->url );
+            
         } else {
             
             $this->template->content = new View( 'projects/add' );
-            $this->template->content->project_types = projects_utils::get_poject_types_dropdown_array();
+            $this->template->content->project_types = Projects_utils::get_poject_types_dropdown_array();
         }
     }
     
