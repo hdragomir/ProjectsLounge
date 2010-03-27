@@ -63,9 +63,8 @@ class Projects_Controller extends Template_Controller{
     
     
     public function edit( $id ){
-        
-        $user = Auth::instance()->get_user();
 
+        $user = Auth::instance()->get_user();
         $project = ORM::factory( 'project', $id );
         if( ! $project->user_can( $user, 'edit' ) )
             return $this->template->content = 'oh, come on!';
@@ -84,5 +83,4 @@ class Projects_Controller extends Template_Controller{
                                     ->bind( 'user', $user );
         }
     }
-    
 }

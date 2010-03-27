@@ -377,3 +377,57 @@
 2010-03-27 16:39:20 +02:00 --- debug: Session Cookie Driver Initialized
 2010-03-27 16:39:20 +02:00 --- debug: Session Library initialized
 2010-03-27 16:39:20 +02:00 --- debug: Auth Library loaded
+2010-03-27 16:44:40 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 16:44:40 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 16:44:40 +02:00 --- debug: Database Library initialized
+2010-03-27 16:44:41 +02:00 --- debug: Session Cookie Driver Initialized
+2010-03-27 16:44:41 +02:00 --- debug: Session Library initialized
+2010-03-27 16:44:41 +02:00 --- debug: Auth Library loaded
+2010-03-27 16:48:28 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 16:48:28 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 16:48:28 +02:00 --- debug: Database Library initialized
+2010-03-27 16:48:28 +02:00 --- debug: Session Cookie Driver Initialized
+2010-03-27 16:48:28 +02:00 --- debug: Session Library initialized
+2010-03-27 16:48:28 +02:00 --- debug: Auth Library loaded
+2010-03-27 16:48:43 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 16:48:43 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 16:48:43 +02:00 --- debug: Database Library initialized
+2010-03-27 16:48:43 +02:00 --- debug: Session Cookie Driver Initialized
+2010-03-27 16:48:43 +02:00 --- debug: Session Library initialized
+2010-03-27 16:48:43 +02:00 --- debug: Auth Library loaded
+2010-03-27 16:48:54 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 16:48:54 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 16:48:54 +02:00 --- debug: Database Library initialized
+2010-03-27 16:48:54 +02:00 --- debug: Session Cookie Driver Initialized
+2010-03-27 16:48:54 +02:00 --- debug: Session Library initialized
+2010-03-27 16:48:54 +02:00 --- debug: Auth Library loaded
+2010-03-27 16:49:03 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 16:49:03 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 16:49:03 +02:00 --- debug: Database Library initialized
+2010-03-27 16:49:03 +02:00 --- debug: Session Cookie Driver Initialized
+2010-03-27 16:49:03 +02:00 --- debug: Session Library initialized
+2010-03-27 16:49:03 +02:00 --- debug: Auth Library loaded
+2010-03-27 16:49:37 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 16:49:37 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 16:49:37 +02:00 --- debug: Database Library initialized
+2010-03-27 16:49:38 +02:00 --- debug: Session Cookie Driver Initialized
+2010-03-27 16:49:38 +02:00 --- debug: Session Library initialized
+2010-03-27 16:49:38 +02:00 --- debug: Auth Library loaded
+2010-03-27 16:49:39 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 16:49:39 +02:00 --- debug: Session Cookie Driver Initialized
+2010-03-27 16:49:39 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 16:49:39 +02:00 --- debug: Database Library initialized
+2010-03-27 16:49:39 +02:00 --- debug: Session Library initialized
+2010-03-27 16:49:39 +02:00 --- debug: Auth Library loaded
+2010-03-27 16:49:41 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 16:49:41 +02:00 --- debug: Session Cookie Driver Initialized
+2010-03-27 16:49:41 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 16:49:41 +02:00 --- debug: Database Library initialized
+2010-03-27 16:49:41 +02:00 --- debug: Session Library initialized
+2010-03-27 16:49:41 +02:00 --- debug: Auth Library loaded
+2010-03-27 16:49:41 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 16:49:41 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 16:49:41 +02:00 --- debug: Database Library initialized
+2010-03-27 16:49:41 +02:00 --- debug: Session Cookie Driver Initialized
+2010-03-27 16:49:41 +02:00 --- debug: Session Library initialized
+2010-03-27 16:49:41 +02:00 --- debug: Auth Library loaded
