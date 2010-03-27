@@ -1062,3 +1062,39 @@
 2010-03-27 19:02:54 +02:00 --- debug: Session Cookie Driver Initialized
 2010-03-27 19:02:54 +02:00 --- debug: Session Library initialized
 2010-03-27 19:02:54 +02:00 --- debug: Auth Library loaded
+2010-03-27 19:13:52 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 19:13:52 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 19:13:52 +02:00 --- debug: Database Library initialized
+2010-03-27 19:13:52 +02:00 --- debug: Session Cookie Driver Initialized
+2010-03-27 19:13:52 +02:00 --- debug: Session Library initialized
+2010-03-27 19:13:52 +02:00 --- debug: Auth Library loaded
+2010-03-27 19:13:54 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 19:13:54 +02:00 --- debug: Session Cookie Driver Initialized
+2010-03-27 19:13:54 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 19:13:54 +02:00 --- debug: Database Library initialized
+2010-03-27 19:13:54 +02:00 --- debug: Session Library initialized
+2010-03-27 19:13:54 +02:00 --- debug: Auth Library loaded
+2010-03-27 19:17:35 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 19:17:35 +02:00 --- debug: Session Cookie Driver Initialized
+2010-03-27 19:17:35 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 19:17:35 +02:00 --- debug: Database Library initialized
+2010-03-27 19:17:35 +02:00 --- debug: Session Library initialized
+2010-03-27 19:17:35 +02:00 --- debug: Auth Library loaded
+2010-03-27 19:19:06 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 19:19:06 +02:00 --- debug: Session Cookie Driver Initialized
+2010-03-27 19:19:06 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 19:19:06 +02:00 --- debug: Database Library initialized
+2010-03-27 19:19:06 +02:00 --- debug: Session Library initialized
+2010-03-27 19:19:06 +02:00 --- debug: Auth Library loaded
+2010-03-27 19:19:51 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 19:19:51 +02:00 --- debug: Session Cookie Driver Initialized
+2010-03-27 19:19:51 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 19:19:51 +02:00 --- debug: Database Library initialized
+2010-03-27 19:19:51 +02:00 --- debug: Session Library initialized
+2010-03-27 19:19:51 +02:00 --- debug: Auth Library loaded
+2010-03-27 19:21:32 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 19:21:32 +02:00 --- debug: Session Cookie Driver Initialized
+2010-03-27 19:21:32 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 19:21:32 +02:00 --- debug: Database Library initialized
+2010-03-27 19:21:32 +02:00 --- debug: Session Library initialized
+2010-03-27 19:21:32 +02:00 --- debug: Auth Library loaded
