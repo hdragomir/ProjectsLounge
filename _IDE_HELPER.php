@@ -44,3 +44,5 @@ class security extends security_Core { }
 class text extends text_Core { }
 class url extends url_Core { }
 class valid extends valid_Core { }
+
+class Auth extends Auth_Core { }

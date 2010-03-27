@@ -4,7 +4,7 @@ class Auth_User_Model extends ORM {
 
 	// Relationships
 	protected $has_many = array('user_tokens');
-	protected $has_and_belongs_to_many = array('roles');
+	protected $has_and_belongs_to_many = array('roles', 'projects');
 
 	// Columns to ignore
 	protected $ignored_columns = array('password_confirm');

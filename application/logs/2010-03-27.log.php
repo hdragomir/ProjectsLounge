@@ -1,0 +1,6 @@
+<?php defined('SYSPATH') or die('No direct script access.'); ?>
+
+2010-03-27 00:19:29 +02:00 --- error: Uncaught PHP Error: mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'projectslounge'@'88.158.60.35' (using password: YES) in file E:/xampp/htdocs/ProjectsLounge/system/libraries/drivers/Database/Mysql.php on line 61
+2010-03-27 00:19:31 +02:00 --- error: Uncaught PHP Error: mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'projectslounge'@'88.158.60.35' (using password: YES) in file E:/xampp/htdocs/ProjectsLounge/system/libraries/drivers/Database/Mysql.php on line 61
+2010-03-27 00:21:23 +02:00 --- error: Uncaught PHP Error: mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'projectslounge'@'88.158.60.35' (using password: YES) in file E:/xampp/htdocs/ProjectsLounge/system/libraries/drivers/Database/Mysql.php on line 61
+2010-03-27 00:21:28 +02:00 --- error: Uncaught PHP Error: mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'projectslounge'@'88.158.60.35' (using password: YES) in file E:/xampp/htdocs/ProjectsLounge/system/libraries/drivers/Database/Mysql.php on line 61
