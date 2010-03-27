@@ -33,18 +33,15 @@ class Projects_Controller extends Template_Controller{
     
     public function add(){
         
+        $user = Auth::instance()->get_user();
+        
         if( $post = $this->input->post( 'project' ) ){
-            $user = Auth::instance()->get_user();
             if( ! $user )
                 return $this->template->content = 'You need to be logged in';
             
             $project = ORM::factory( 'project' );
         
-            $validation = new Validation( $post );
-            
-            $validation
-                ->add_rules( 'name', 'required' )
-                ->add_rules( 'project_type_id', 'required', 'numeric' );
+            $validation = Projects_utils::projects_add_validation( $post );
             
             if( !$project->validate( $validation, true ) )
                 return $this->template->content = Kohana::debug( $validation->errors() );
@@ -59,7 +56,8 @@ class Projects_Controller extends Template_Controller{
         } else {
             
             $this->template->content = new View( 'projects/add' );
-            $this->template->content->project_types = Projects_utils::get_poject_types_dropdown_array();
+            $this->template->content->project_types = Projects_utils::get_project_types_dropdown_array();
+            $this->template->content->user = $user;
         }
     }
     
@@ -67,14 +65,24 @@ class Projects_Controller extends Template_Controller{
     public function edit( $id ){
         
         $user = Auth::instance()->get_user();
-        
+
         $project = ORM::factory( 'project', $id );
         if( ! $project->user_can( $user, 'edit' ) )
             return $this->template->content = 'oh, come on!';
         
-        $this->template->content = View::factory( 'projects/edit' )
+        if( $post = $this->input->post( 'project' ) ){
+            
+            $validation = Projects_utils::projects_edit_validation( $post );
+            
+            $project->validate( $validation, true );
+            
+            url::redirect( $project->url );
+        } else {
+            $this->template->content = View::factory( 'projects/edit' )
+                                    ->bind( 'project_types', Projects_utils::get_project_types_dropdown_array() )
                                     ->bind( 'project', $project )
                                     ->bind( 'user', $user );
+        }
     }
     
 }

@@ -7,7 +7,7 @@
                   form::input( 'project[name]' ); ?></p>
     <p><?php echo form::label( 'project[project_type_id]', 'Project Type' ),
                   form::dropdown( 'project[project_type_id]', $project_types ); ?></p>
-    <p><?php echo form::label( 'user[role]', 'You Role' ),
+    <p><?php echo form::label( 'user[role]', 'Your Role' ),
                   form::input( 'user[role]' ); ?></p>
 
 <?php echo form::close_fieldset(); ?>

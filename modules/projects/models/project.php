@@ -48,6 +48,7 @@ class Project_Model extends ORM{
     
     
     public function __toString(){
+
         return $this->name;
     }
 }
