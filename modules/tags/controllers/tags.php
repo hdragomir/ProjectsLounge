@@ -7,7 +7,7 @@ class Tags_Controller extends Template_Controller{
     
     public function index()
     {
-        
+        return $this->all();
     }
     
     

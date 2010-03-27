@@ -49,7 +49,7 @@ class Projects_Controller extends Template_Controller{
             $post_user_data = $this->input->post( 'user' );
             
             if( ! empty( $post_user_data[ 'role' ] ) )
-                $project->set_user_roles( array( $user->id => $post_user_data[ 'role' ] ) );
+                $project->add_user_roles( array( $user->id => $post_user_data[ 'role' ] ) );
             
             return url::redirect( $project->url );
             
@@ -73,9 +73,20 @@ class Projects_Controller extends Template_Controller{
             
             $validation = Projects_utils::projects_edit_validation( $post );
             
-            $project->validate( $validation, true );
+            if( ! $project->validate( $validation, true ) )
+                return $this->template->content = Kohana::debug( $validation->errors() );
             
-            url::redirect( $project->url );
+            if( $additional_user_emails = $this->input->post( 'additional_user_emails' ) ){
+                $additional_user_roles = $this->input->post( 'additional_user_roles' );
+                
+                $additional_users = array_combine( $additional_user_emails, $additional_user_roles );
+                
+                $project->add_user_roles( $additional_users );
+                echo 'a';
+            }
+            
+            //url::redirect( $project->url );
+            $this->template->content = '';
         } else {
             $this->template->content = View::factory( 'projects/edit' )
                                     ->bind( 'project_types', Projects_utils::get_project_types_dropdown_array() )

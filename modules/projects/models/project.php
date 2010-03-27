@@ -14,7 +14,7 @@ class Project_Model extends ORM{
         return parent::__get( $prop );
     }
     
-    public function set_user_roles( array $roles ){
+    public function add_user_roles( array $roles ){
         
         foreach( $roles as $user_key => $role )
             $this->add_user_role( $user_key, $role );
@@ -24,9 +24,13 @@ class Project_Model extends ORM{
     public function add_user_role( $user, $role_string ){
         
         $user = ORM::factory( 'user', $user );
-        $role = ORM::factory( 'project_user_role' );
-        $role->user = $user;
-        $role->project = $this;
+        if( $this->has_user( $user ) ){
+            $role = $user->role_for_project( $this );
+        } else {
+            $role = ORM::factory( 'project_user_role' );
+            $role->user = $user;
+            $role->project = $this;
+        }
         $role->role = $role_string;
         $role->save();
     }

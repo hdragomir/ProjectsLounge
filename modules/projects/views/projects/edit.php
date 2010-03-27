@@ -12,9 +12,14 @@
 
 <?php echo form::close_fieldset(); ?>
 
+<?php /* todo list current members */ ?>
 
 <?php echo form::open_fieldset( array( 'class' => 'additional-users' ) ); ?>
-    <?php echo form::input( 'additional_user_emails[]' ); ?>
+    <?php echo form::legend( 'Additional Members' ); ?>
+    <?php echo form::input( array( 'name' => 'additional_user_emails[]',
+                                   'type' => 'email' ) ); ?>
+                                   
+    <?php echo form::input( 'additional_user_roles[]' ); ?>
 <?php echo form::close_fieldset(); ?>
 
 

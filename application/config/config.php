@@ -4,7 +4,13 @@
  * then a full URL will be used, eg: http://localhost/kohana/. If it only includes
  * the path, and a site_protocol is specified, the domain will be auto-detected.
  */
-$config['site_domain'] = 'projectslounge.diz/';
+
+if( 'localhost' == $_SERVER['SERVER_NAME'] )
+    $config['site_domain'] = 'localhost:8090/ProjectsLounge';
+else if ( 'projectslounge.diz' == $_SERVER['SERVER_NAME'] )
+    $config['site_domain'] = 'projectslounge.diz';
+else
+    $config['site_domain'] = 'dev.projectslounge.com';
 
 /**
  * Force a default protocol to be used by the site. If no site_protocol is
