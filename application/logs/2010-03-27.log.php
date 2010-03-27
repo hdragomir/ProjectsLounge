@@ -1062,3 +1062,96 @@
 2010-03-27 19:02:54 +02:00 --- debug: Session Cookie Driver Initialized
 2010-03-27 19:02:54 +02:00 --- debug: Session Library initialized
 2010-03-27 19:02:54 +02:00 --- debug: Auth Library loaded
+2010-03-27 19:22:55 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 19:22:55 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 19:22:55 +02:00 --- debug: Database Library initialized
+2010-03-27 19:29:28 +02:00 --- error: Uncaught Kohana_404_Exception: The page you requested, css/style.css, could not be found. in file D:/workspace/projectslounge.diz/system/core/Kohana.php on line 841
+2010-03-27 21:25:57 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 21:25:57 +02:00 --- debug: Session Cookie Driver Initialized
+2010-03-27 21:25:57 +02:00 --- debug: Session Library initialized
+2010-03-27 21:25:57 +02:00 --- debug: Auth Library loaded
+2010-03-27 21:25:57 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 21:25:57 +02:00 --- debug: Database Library initialized
+2010-03-27 21:31:35 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 21:35:37 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 21:35:43 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 21:35:59 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 21:35:59 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 21:35:59 +02:00 --- debug: Database Library initialized
+2010-03-27 21:39:48 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 21:39:48 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 21:39:48 +02:00 --- debug: Database Library initialized
+2010-03-27 21:39:56 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 21:39:59 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 21:39:59 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 21:39:59 +02:00 --- debug: Database Library initialized
+2010-03-27 21:43:54 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 21:43:54 +02:00 --- debug: Session Cookie Driver Initialized
+2010-03-27 21:43:54 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 21:43:54 +02:00 --- debug: Database Library initialized
+2010-03-27 21:43:54 +02:00 --- debug: Session Library initialized
+2010-03-27 21:43:54 +02:00 --- debug: Auth Library loaded
+2010-03-27 21:43:58 +02:00 --- error: Uncaught Kohana_404_Exception: The page you requested, subscribersadd, could not be found. in file D:/workspace/projectslounge.diz/system/core/Kohana.php on line 841
+2010-03-27 21:44:06 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 21:44:10 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 21:44:10 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 21:44:10 +02:00 --- debug: Database Library initialized
+2010-03-27 21:53:10 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 21:53:10 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 21:53:10 +02:00 --- debug: Database Library initialized
+2010-03-27 21:53:23 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 21:53:23 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 21:53:23 +02:00 --- debug: Database Library initialized
+2010-03-27 21:57:38 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 21:57:38 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 21:57:38 +02:00 --- debug: Database Library initialized
+2010-03-27 21:57:38 +02:00 --- error: Uncaught PHP Error: Undefined variable: validation in file D:/workspace/projectslounge.diz/modules/subscribers/controllers/subscribers.php on line 25
+2010-03-27 21:58:01 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 21:58:01 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 21:58:01 +02:00 --- debug: Database Library initialized
+2010-03-27 21:58:32 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 21:58:32 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 21:58:32 +02:00 --- debug: Database Library initialized
+2010-03-27 21:59:38 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 21:59:39 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 21:59:40 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 21:59:40 +02:00 --- debug: Database Library initialized
+2010-03-27 21:59:51 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 21:59:51 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 21:59:51 +02:00 --- debug: Database Library initialized
+2010-03-27 22:07:42 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 22:07:42 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 22:07:42 +02:00 --- debug: Database Library initialized
+2010-03-27 22:07:42 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 22:07:42 +02:00 --- debug: Session Cookie Driver Initialized
+2010-03-27 22:07:42 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 22:07:42 +02:00 --- debug: Database Library initialized
+2010-03-27 22:07:43 +02:00 --- debug: Session Library initialized
+2010-03-27 22:07:43 +02:00 --- debug: Auth Library loaded
+2010-03-27 22:07:56 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 22:07:56 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 22:07:56 +02:00 --- debug: Session Cookie Driver Initialized
+2010-03-27 22:07:56 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 22:07:56 +02:00 --- debug: Database Library initialized
+2010-03-27 22:07:56 +02:00 --- debug: Session Library initialized
+2010-03-27 22:07:56 +02:00 --- debug: Auth Library loaded
+2010-03-27 22:08:25 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 22:08:31 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 22:08:31 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 22:08:31 +02:00 --- debug: Database Library initialized
+2010-03-27 22:08:48 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 22:08:48 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 22:08:48 +02:00 --- debug: Database Library initialized
+2010-03-27 22:15:28 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 22:15:31 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 22:15:31 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 22:15:31 +02:00 --- debug: Database Library initialized
+2010-03-27 22:15:33 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 22:15:34 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 22:15:34 +02:00 --- debug: Database Library initialized
+2010-03-27 22:19:41 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 22:19:41 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 22:19:41 +02:00 --- debug: Database Library initialized
+2010-03-27 22:19:54 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 22:19:54 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 22:19:54 +02:00 --- debug: Database Library initialized

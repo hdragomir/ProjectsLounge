@@ -1,0 +1,246 @@
+/* CSS reset by Eric Meyer
+-------------------------------------------------------------------------------------------------------------- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.clear {
+	clear: both;
+}
+
+/* Typography
+-------------------------------------------------------------------------------------------------------------- */
+p {
+	margin: 0 0 20px;
+}
+a {
+	text-decoration: none;
+	color: #77388e;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+h1 {
+	font-size: 30px;
+    line-height: 30px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+h2 {
+	font-size: 24px;
+    line-height: 24px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+h3 {
+	font-size: 18px;
+    line-height: 18px;
+	margin-top: 8px;
+	margin-bottom: 5px;
+}
+h4, h5, h6 {
+	font-size: 16px;
+    line-height: 16px;
+	margin-top: 8px;
+	margin-bottom: 5px;
+}
+
+/* Layout
+-------------------------------------------------------------------------------------------------------------- */
+body {
+	background: #fff url("../images/bg.gif") repeat-x;
+	color: #333;
+	font: normal 14px/1.5 Arial,  sans-serif;
+}
+#wrapper {
+	position: relative;
+	width: 960px;
+	margin: 0 auto;
+}
+
+/* Header 
+-------------------------------------------------------------------------------------------------------------- */
+#header {
+	float: left;
+	clear: both;
+	width: 960px;
+	height: 125px;
+	padding-top: 55px;
+}
+#login {
+	display: block;
+	position: absolute;
+	top: 7px;
+	right: 0px;
+	font-size: 12px;
+	color: #fff;
+}
+#search {
+	float: right;
+	width: 286px;
+	height: 25px;
+	padding: 8px 7px 7px;
+	background: url("../images/search_bg.png") no-repeat;
+}
+#search p {
+	margin: 0;
+}
+#search_field {
+	float: left;
+	width: 200px;
+	height: 20px;
+	padding-left: 10px;
+	border: none;
+	background: #fcfcfc;
+	font-size: 12px;
+	color: #999;
+}
+#btn_search {
+	float: right;
+	width: 71px;
+	height: 24px;
+}
+
+/* Nav 
+-------------------------------------------------------------------------------------------------------------- */
+#nav {
+	float: left;
+	width: 960px;
+	height: 61px;
+	background: url("../images/nav_bg.png") repeat-x;
+}
+#nav li {
+	float: left;
+	height: 61px;
+}
+#nav li.first {
+	background: url("../images/tab_left_bg.png") no-repeat;
+}
+#nav li a {
+	display: block;
+	float: left;
+	height: 35px;
+	padding: 26px 25px 0 5px;
+	font-size: 16px;
+	background: url("../images/tab_bg.png") 100% 0% no-repeat;
+	color: #333;
+	text-shadow: #fff 0px 1px 1px;
+}
+#nav li.first a {
+	padding-left: 12px;
+}
+#nav li.last {
+	float: right;
+	width: 170px;
+	background: url("../images/btn_add_project.png") no-repeat;
+}
+#nav li.last a {
+	width: 160px;
+	padding: 23px 10px 0 0;
+	background: none;
+	font-family: "Trebuchet MS", Arial, sans-serif;
+	text-align: center;
+	font-style: italic;
+	color: #fff;
+	text-shadow: #000 0px 1px 1px;
+}
+
+/* Homepage 
+-------------------------------------------------------------------------------------------------------------- */
+#welcome {
+	float: left;
+	padding-bottom: 10px;
+	background: url("../images/welcome_bg.png") 0% 100% no-repeat;
+}
+.section {
+	float: left;
+	width: 960px;
+	background: url("../images/section_bg.png") repeat-y;
+}
+#welcome .section {
+	width: 940px;
+	padding: 10px;
+}
+#featured {
+	float: left;
+	width: 960px;
+	padding-bottom: 14px;
+	background: url("../images/featured_bg.png") 0% 100% no-repeat;
+}
+.section2 {
+	float: left;
+	width: 960px;
+	background: url("../images/section2_bg.png") repeat-y;
+}
+#featured .section2 {
+	width: 940px;
+	padding: 10px;
+}
+#reasons {
+	float: left;
+	width: 960px;
+	margin: 0 0 20px;
+}
+
+/* Content 
+-------------------------------------------------------------------------------------------------------------- */
+#content {
+	float: left;
+	width: 960px;
+	height: 170px;
+}
+
+/* Footer 
+-------------------------------------------------------------------------------------------------------------- */
+#footer_wrapper {
+	clear: both;
+	height: 45px;
+	background: url("../images/footer_bg.gif") repeat-x;
+}
+#footer {
+	width: 960px;
+	margin: 0 auto;
+	color: #fff;
+}
+#footer a {
+	color: #fff;
+}
