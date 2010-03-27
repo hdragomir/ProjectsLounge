@@ -32,27 +32,30 @@
     
     <a id="login" href="<?php echo url::site( 'login' ); ?>">Login to your account</a>
     
-    <nav>
-        <ul id="nav">
-            <li class="first"><a href="<?php echo url::site( 'projects' ); ?>">Projects</a></li>
-            <li><a href="<?php echo url::site( 'members' ); ?>">Members</a></li>
-            <li><a href="<?php echo url::site( 'about' ); ?>">About</a></li>
-            <li><a href="<?php echo url::site( 'contact' ); ?>">Contact</a></li>
-            <li class="last"><a href="<?php echo url::site( 'projects/add' ); ?>">Add new project</a></li>
-        </ul>
-    </nav>
+    
+    <ul id="nav">
+        <li class="first"><a href="<?php echo url::site( 'projects' ); ?>">Projects</a></li>
+        <li><a href="<?php echo url::site( 'members' ); ?>">Members</a></li>
+        <li><a href="<?php echo url::site( 'about' ); ?>">About</a></li>
+        <li><a href="<?php echo url::site( 'contact' ); ?>">Contact</a></li>
+        <li class="last"><a href="<?php echo url::site( 'projects/add' ); ?>">Add new project</a></li>
+    </ul>
+
+    <div id="main-content" class="section">
     <?php
         if( isset( $content ) )
             echo $content;
         else
             echo 'oups!';
         ?>
+    </div>
     <div id="footer_wrapper">
-    <div id="footer">
-    Copyright &#169; 2010 Projects Lounge. All rigts reserved
-    <p>
-        <a href="#">Home</a> | <a href="#">Projects</a> | <a href="#">Members</a> | <a href="#">About</a> | <a href="#">Contact</a>
-    </p>
+        <div id="footer">
+        Copyright &#169; 2010 Projects Lounge. All rigts reserved
+        <p>
+            <a href="#">Home</a> | <a href="#">Projects</a> | <a href="#">Members</a> | <a href="#">About</a> | <a href="#">Contact</a>
+        </p>
+        </div>
     </div>
 </div>
 <!-- {execution_time} {memory_usage} {included_files} files included -->

@@ -1,7 +1,5 @@
 
 <?php echo form::open( null, array( 'method' => 'post' ) ); ?>
-
-
 <fieldset>
     <legend>Project Type</legend>
     <?php foreach( $project_types as $type_id => $type_name ): ?>
@@ -14,11 +12,8 @@
 <?php echo form::open_fieldset( array( 'class' => 'required-info' ) ); ?>
     <?php echo form::legend( 'Required Info' ); ?>
 
-    <p><?php echo form::label( 'project[name]', 'Project Name' ),
-                  form::input( 'project[name]' ); ?>
-    <?php echo form::label( 'user[role]', 'Your Role' ),
-                  form::input( 'user[role]' ); ?></p>
-    <p></p>
+    <p><label>Project Name <?php echo form::input( 'project[name]' ); ?></label>
+       <label>Your Role <?php echo form::input( 'user[role]' ); ?></label></p>
 <?php echo form::close_fieldset(); ?>
 
 
