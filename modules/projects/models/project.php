@@ -35,7 +35,6 @@ class Project_Model extends ORM{
         
         if( 'edit' == $action )
             return $this->has_user( $user );
-        
     }
     
     
@@ -45,5 +44,10 @@ class Project_Model extends ORM{
                         ->where( 'project_id', $this->id )
                         ->where( 'user_id', $user->id )
                         ->count_all();
+    }
+    
+    
+    public function __toString(){
+        return $this->name;
     }
 }

@@ -238,3 +238,58 @@
 2010-03-27 15:47:15 +02:00 --- debug: Session Cookie Driver Initialized
 2010-03-27 15:47:15 +02:00 --- debug: Session Library initialized
 2010-03-27 15:47:15 +02:00 --- debug: Auth Library loaded
+2010-03-27 15:53:09 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 15:53:09 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 15:53:09 +02:00 --- debug: Database Library initialized
+2010-03-27 15:53:09 +02:00 --- debug: Session Cookie Driver Initialized
+2010-03-27 15:53:09 +02:00 --- debug: Session Library initialized
+2010-03-27 15:53:09 +02:00 --- debug: Auth Library loaded
+2010-03-27 15:54:51 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 15:54:51 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 15:54:51 +02:00 --- debug: Database Library initialized
+2010-03-27 15:54:51 +02:00 --- debug: Session Cookie Driver Initialized
+2010-03-27 15:54:51 +02:00 --- debug: Session Library initialized
+2010-03-27 15:54:51 +02:00 --- debug: Auth Library loaded
+2010-03-27 15:54:54 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 15:54:54 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 15:54:54 +02:00 --- debug: Database Library initialized
+2010-03-27 15:54:54 +02:00 --- debug: Session Cookie Driver Initialized
+2010-03-27 15:54:54 +02:00 --- debug: Session Library initialized
+2010-03-27 15:54:54 +02:00 --- debug: Auth Library loaded
+2010-03-27 15:57:07 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 15:57:07 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 15:57:07 +02:00 --- debug: Database Library initialized
+2010-03-27 15:57:07 +02:00 --- debug: Session Cookie Driver Initialized
+2010-03-27 15:57:07 +02:00 --- debug: Session Library initialized
+2010-03-27 15:57:07 +02:00 --- debug: Auth Library loaded
+2010-03-27 16:02:21 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 16:02:21 +02:00 --- debug: Session Cookie Driver Initialized
+2010-03-27 16:02:21 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 16:02:21 +02:00 --- debug: Database Library initialized
+2010-03-27 16:02:21 +02:00 --- debug: Session Library initialized
+2010-03-27 16:02:21 +02:00 --- debug: Auth Library loaded
+2010-03-27 16:02:21 +02:00 --- error: Uncaught Kohana_Exception: The requested view, projects/edit, could not be found in file E:/xampp/htdocs/ProjectsLounge/system/core/Kohana.php on line 1162
+2010-03-27 16:02:48 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 16:02:48 +02:00 --- debug: Session Cookie Driver Initialized
+2010-03-27 16:02:48 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 16:02:48 +02:00 --- debug: Database Library initialized
+2010-03-27 16:02:48 +02:00 --- debug: Session Library initialized
+2010-03-27 16:02:48 +02:00 --- debug: Auth Library loaded
+2010-03-27 16:03:24 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 16:03:24 +02:00 --- debug: Session Cookie Driver Initialized
+2010-03-27 16:03:24 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 16:03:24 +02:00 --- debug: Database Library initialized
+2010-03-27 16:03:24 +02:00 --- debug: Session Library initialized
+2010-03-27 16:03:24 +02:00 --- debug: Auth Library loaded
+2010-03-27 16:03:30 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 16:03:30 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 16:03:30 +02:00 --- debug: Database Library initialized
+2010-03-27 16:03:30 +02:00 --- debug: Session Cookie Driver Initialized
+2010-03-27 16:03:30 +02:00 --- debug: Session Library initialized
+2010-03-27 16:03:30 +02:00 --- debug: Auth Library loaded
+2010-03-27 16:03:33 +02:00 --- debug: Global GET, POST and COOKIE data sanitized
+2010-03-27 16:03:33 +02:00 --- debug: Session Cookie Driver Initialized
+2010-03-27 16:03:33 +02:00 --- debug: MySQL Database Driver Initialized
+2010-03-27 16:03:33 +02:00 --- debug: Database Library initialized
+2010-03-27 16:03:33 +02:00 --- debug: Session Library initialized
+2010-03-27 16:03:33 +02:00 --- debug: Auth Library loaded

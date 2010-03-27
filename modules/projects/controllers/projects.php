@@ -63,4 +63,18 @@ class Projects_Controller extends Template_Controller{
         }
     }
     
+    
+    public function edit( $id ){
+        
+        $user = Auth::instance()->get_user();
+        
+        $project = ORM::factory( 'project', $id );
+        if( ! $project->user_can( $user, 'edit' ) )
+            return $this->template->content = 'oh, come on!';
+        
+        $this->template->content = View::factory( 'projects/edit' )
+                                    ->bind( 'project', $project )
+                                    ->bind( 'user', $user );
+    }
+    
 }
