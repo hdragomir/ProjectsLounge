@@ -95,4 +95,3 @@ class Projects_Controller extends Template_Controller{
         }
     }
 }
-
