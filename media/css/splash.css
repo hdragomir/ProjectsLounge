@@ -1,0 +1,48 @@
+* {margin: 0; padding: 0; }
+a img { border: none; }
+fieldset {
+	border: none;
+}
+body {
+	background: #fff;
+	color: #333;
+	font: normal 13px/2 Tahoma, Arial, sans-serif;
+}
+#splash {
+	width: 960px;
+	height: 360px;
+	margin: 0 auto;
+	padding-top: 110px;
+}
+#left {
+	float: left;
+	width: 390px;
+	height: 360px;
+	padding-top: 140px;
+	border-right: 10px solid #ededed;
+}
+#right {
+	float: left;
+	width: 420px;
+	padding: 140px 70px 0 70px;
+}
+#right p {
+	margin: 0 0 30px;
+}
+#email {
+	float: left;
+	display: block;
+	width: 200px;
+	height: 28px;
+	line-height: 28px;
+	margin-right: 10px;
+	border: 1px solid #999;
+	padding: 0 5px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	color: #999;
+}
+#btn_submit {
+	float: left;
+}
