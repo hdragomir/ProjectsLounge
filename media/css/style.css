@@ -48,15 +48,22 @@ table {
 
 /* Layout
 -------------------------------------------------------------------------------------------------------------- */
+html {
+	height: 100%;
+}
 body {
+	height: 100%;
 	background: #fff url("../images/bg.gif") repeat-x;
 	color: #333;
 	font: normal 12px/1.5 Tahoma, Arial, sans-serif;
 }
 #wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -45px;
 	position: relative;
 	width: 960px;
-	margin: 0 auto;
 }
 
 /* Typography
@@ -103,8 +110,6 @@ button.awesome,
 	border-radius: 15px;
 	-moz-border-radius: 15px;
 	-webkit-border-radius: 15px;
-	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
-	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
 	text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
 	border-bottom: 1px solid rgba(0,0,0,0.25);
 	border-top: none;
@@ -137,8 +142,8 @@ button.awesome:hover,
 	float: left;
 	clear: both;
 	width: 960px;
-	height: 125px;
-	padding-top: 55px;
+	height: 100px;
+	padding-top: 40px;
 }
 #branding {
 	float: left;
@@ -536,6 +541,15 @@ button.awesome:hover,
 	line-height: 1.8;
 	margin: 0 0 30px;
 }
+#type_web {
+	background: url("../images/type_web.png") no-repeat;
+}
+#type_mobile {
+	
+}
+#type_desktop {
+	
+}
 
 /* 404 
 -------------------------------------------------------------------------------------------------------------- */
@@ -556,6 +570,20 @@ button.awesome:hover,
 	width: 500px;
 	padding-right: 60px;
 }
+#options_404 span {
+	display: block;
+	float: left;
+	width: 32px;
+	padding-top: 5px;
+	text-align: center;
+}
+.btn_one,
+.btn_two,
+.btn_three {
+	display: block;
+	font-size: 14px;
+	float: left;
+}
 
 /* Content 
 -------------------------------------------------------------------------------------------------------------- */
@@ -567,8 +595,11 @@ button.awesome:hover,
 
 /* Footer 
 -------------------------------------------------------------------------------------------------------------- */
-#footer_wrapper {
+#push{
 	clear: both;
+	height: 45px;
+}
+#footer_wrapper {
 	height: 45px;
 	background: url("../images/footer_bg.gif") repeat-x;
 	margin: 0;
