@@ -59,6 +59,30 @@ class Projects_Controller extends Template_Controller{
             
             $project->add_user_roles( array( $user->id => $post_user_data[ 'role' ] ) );
             
+            if( ! empty( $_FILES ) ){
+                
+                $image_file = $_FILES[ 'screenshot' ];
+                
+                if( ! $image_file[ 'error' ] ){
+                    $image = new Image( $image_file[ 'tmp_name' ] );
+                    if( $image->width > 547 )
+                        $image->resize( 547, null );
+                    $image->save( DOCROOT . '/media/project-images/' . $project->id . '.jpg' );
+                }
+                
+                $image_file = $_FILES[ 'logo' ];
+                if( ! $image_file[ 'error' ] ){
+                    $image = new Image( $image_file[ 'tmp_name' ] );
+                    if( $image->width > 60 )
+                        $image->resize( 90, 90, Image::AUTO );
+                    $image->crop( 60, 60, 'center' )
+                    ->save( DOCROOT . '/media/project-images/' . $project->id . '-tiny.jpg' );
+                }
+                
+
+                
+            }
+            
             return url::redirect( $project->local_url );
             
         } else {
