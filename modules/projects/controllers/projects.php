@@ -57,10 +57,10 @@ class Projects_Controller extends Template_Controller{
             if( ! empty( $post_user_data[ 'role' ] ) )
                 $project->add_user_roles( array( $user->id => $post_user_data[ 'role' ] ) );
             
-            return url::redirect( $project->url );
+            return url::redirect( $project->local_url );
             
         } else {
-            
+            HTMLPage::add_style( 'forms' );
             $this->template->content = new View( 'projects/add' );
             $this->template->content->project_types = Projects_utils::get_project_types_dropdown_array();
             $this->template->content->user = $user;
@@ -92,9 +92,10 @@ class Projects_Controller extends Template_Controller{
                 echo 'a';
             }
             
-            url::redirect( $project->url );
+            url::redirect( $project->local_url );
             
         } else {
+            HTMLPage::add_style( 'forms' );
             $this->template->content = View::factory( 'projects/edit' )
                                     ->bind( 'project_types', Projects_utils::get_project_types_dropdown_array() )
                                     ->bind( 'project', $project )

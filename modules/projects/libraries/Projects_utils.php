@@ -17,8 +17,9 @@ class Projects_utils{
         
         $validation
             ->add_rules( 'name', 'required' )
-            ->add_rules( 'project_type_id', 'required', 'numeric' );
-        
+            ->add_rules( 'project_type_id', 'required', 'numeric' )
+            ->add_rules( 'url', 'url' )
+        ;
         return $validation;
     }
     

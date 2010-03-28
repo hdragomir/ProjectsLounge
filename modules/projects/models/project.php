@@ -7,12 +7,14 @@ class Project_Model extends ORM{
     
     
     public function __get( $prop ){
-
-        if( 'url' == $prop )
+        
+        if( 'local_url' == $prop ){
             return url::site( "projects/{$this->id}" );
+        }
         
         return parent::__get( $prop );
     }
+    
     
     public function add_user_roles( array $roles ){
         
