@@ -1,9 +1,13 @@
-<div id="four-oh-four" class="section-wrapper">
-	<div id="left">
-		<a href="#"><img src="/media/images/projectslounge.png" alt="Projects Lounge" /></a>
-	</div>
-	<div id="right">
-                <h1>404 - for "oh four" page</h1>
-		<p>I can haz 404-page... <a href="/">back to home</a></p>
+
+<div id="four_oh_four">
+	<div class="section2">
+		<div id="left_404">
+			<img src="/media/images/logo_404.png" alt="Projects Lounge" />
+		</div>
+		<div id="right_404">
+			<img src="/media/images/oh_snap.png" alt="Oh Snap!" />
+			<p>You wouldn't want to upset the internet gods, so make sure you wrote the address right! If that's too much of an effort for you, try one of the links below.</p>
+			<p><a class="btn awesome" href="<?php url::site('projects') ?>">Browse projects</a> or <a class="btn awesome" href="<?php url::site('members') ?>">Browse members</a> or <a class="btn awesome" href="/projects/add">Become a member</a></p>
+		</div>
 	</div>
 </div>
