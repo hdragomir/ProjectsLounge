@@ -21,7 +21,8 @@
 
 <?php echo form::open_fieldset( array( 'class' => 'additional-users' ) ); ?>
     <?php echo form::legend( 'Additional Members' ); ?>
-    <p><label><span>Email</span> <?php echo form::input( array( 'name' => 'additional_user_emails[]',
+    <p>Other members</p>
+    <p class="additional-member-wrapper"><label><span>Email</span> <?php echo form::input( array( 'name' => 'additional_user_emails[]',
                                    'type' => 'email' ) ); ?></label>
     <label><span>Role</span> <?php echo form::input( 'additional_user_roles[]' ); ?></label></p>
     
