@@ -1,0 +1,21 @@
+form input{
+    border-radius: 5px;
+    border: 1px #ccc solid;
+}
+
+fieldset legend{
+    display: none;
+}
+
+fieldset{
+    padding-top: 20px;
+}
+
+input[type=submit]{
+    border: none;
+}
+
+.important-stuff, .important-stuff input{
+    font: 18px/30px sans-serif;
+}
+

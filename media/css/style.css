@@ -59,6 +59,10 @@ body {
 	margin: 0 auto;
 }
 
+.pad{
+    padding: 10px;
+}
+
 /* Typography
 -------------------------------------------------------------------------------------------------------------- */
 p {
@@ -151,6 +155,15 @@ button.awesome:hover,
 #search p {
 	margin: 0;
 }
+
+#search fieldset{
+    padding: 0;
+}
+
+#search input{
+    border: none;
+}
+
 #search_field {
 	float: left;
 	width: 200px;

@@ -1,4 +1,4 @@
-<div id="welcome">
+<div id="welcome" class="section-wrapper">
         <div class="section">
             <h1>What is Projects Lounge?</h1>
             <p>Projects Lounge was created for web specialists who want to expose their portfolios and share their working experience with others. 
@@ -9,8 +9,8 @@
         </div>
     </div>
     
-    <div id="featured">
-        <div class="section2">
+    <div id="featured" class="section-wrapper">
+        <div class="section">
             <div id="featured_projects">
                 <h2>Featured Projects</h2>
                 <ul>

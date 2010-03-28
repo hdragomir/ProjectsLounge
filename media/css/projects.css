@@ -1,3 +1,17 @@
 .project-form{
     margin: 40px 10px;
 }
+
+.project-form .project-type legend{
+    display: none;
+}
+
+.project-form .project-type label{
+    width: 20%;
+    display: inline-block;
+    margin: 0;
+    padding: 10px 20px;
+    font: 14px/24px sans-serif;
+    background-color: #ffe300;
+    
+}
