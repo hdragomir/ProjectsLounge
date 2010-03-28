@@ -127,7 +127,8 @@ $config['modules'] = array
     MODPATH . 'profiles',
 
     MODPATH . 'tags',
-    MODPATH . 'subscribers'
+    MODPATH . 'subscribers',
+    MODPATH . 'auth'
     // MODPATH.'kodoc',     // Self-generating documentation
     // MODPATH.'gmaps',     // Google Maps integration
     // MODPATH.'archive',   // Archive utility
