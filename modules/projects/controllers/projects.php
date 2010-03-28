@@ -54,8 +54,10 @@ class Projects_Controller extends Template_Controller{
 
             $post_user_data = $this->input->post( 'user' );
             
-            if( ! empty( $post_user_data[ 'role' ] ) )
-                $project->add_user_roles( array( $user->id => $post_user_data[ 'role' ] ) );
+            if( empty( $post_user_data[ 'role' ] ) )
+                return $this->template->content = 'What was your role?!';
+            
+            $project->add_user_roles( array( $user->id => $post_user_data[ 'role' ] ) );
             
             return url::redirect( $project->local_url );
             
@@ -89,7 +91,6 @@ class Projects_Controller extends Template_Controller{
                 $additional_users = array_combine( $additional_user_emails, $additional_user_roles );
                 
                 $project->add_user_roles( $additional_users );
-                echo 'a';
             }
             
             url::redirect( $project->local_url );

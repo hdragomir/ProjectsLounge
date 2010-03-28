@@ -3,7 +3,7 @@
 class Project_Model extends ORM{
     
     protected $belongs_to = array( 'project_type' );
-    protected $has_and_belongs_to_many = array( 'users' );
+    protected $has_and_belongs_to_many = array( 'users', 'tags' );
     
     
     public function __get( $prop ){
@@ -16,10 +16,39 @@ class Project_Model extends ORM{
     }
     
     
+    public function __set( $prop, $value ){
+        
+        Kohana::log( 'debug', $prop . ' -> ' . Kohana::debug( $value ) );
+        
+        if( 'tags' == $prop && is_string( $value ) )
+            return $this->set_tags( $value );
+
+        return parent::__set( $prop, $value );
+    }
+    
+    
     public function add_user_roles( array $roles ){
         
         foreach( $roles as $user_key => $role )
             $this->add_user_role( $user_key, $role );
+    }
+    
+    
+    public function set_tags( $tags_string ){
+        
+        $tag_strings = preg_split( '/[^\w\-\.\_]+/', $tags_string );
+        $tags = array();
+        foreach( $tag_strings as $tag_string ){
+            
+            $tag = ORM::factory( 'tag', url::title( $tag_string ) );
+            if( ! $tag->loaded ){
+                $tag->name = $tag_string;
+                $tag->save();
+            }
+            $tags[] = $tag->id;
+        }
+        
+        $this->__set( 'tags', $tags );
     }
     
     

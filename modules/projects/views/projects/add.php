@@ -14,10 +14,24 @@
 
     <p class="important-stuff"><label><span>Project Name</span> <?php echo form::input( 'project[name]' ); ?></label>
        <label><span>Project URL</span> <?php echo form::input( 'project[url]' ); ?></label></p>
+    <p><label><span>Brief Description</span><br /><?php echo form::textarea( array( 'name' => 'project[description]',
+                                                                               'id' => 'project-description' ) ); ?></label></p>
     <p><label><span>Your Role</span> <?php echo form::input( 'user[role]' ); ?></label></p>
 
 <?php echo form::close_fieldset(); ?>
 
+
+
+<?php echo form::open_fieldset( array( 'class' => 'tags' ) ); ?>
+
+    <p><label><span>Tags</span> <?php echo form::input( 'project[tags]' ); ?></label><br /><small>(space separated)</small></p>
+
+<?php echo form::close_fieldset(); ?>
+
+
+<?php echo form::open_fieldset( array( 'class' => 'images' ) ); ?>
+
+<?php echo form::close_fieldset(); ?>
 
 <?php echo form::open_fieldset( array( 'class' => 'additional-users' ) ); ?>
     <?php echo form::legend( 'Additional Members' ); ?>

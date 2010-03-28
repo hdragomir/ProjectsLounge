@@ -19,3 +19,11 @@
 .project-type{
     padding-top: 0px;
 }
+
+textarea#project-description{
+    width: 580px;
+}
+
+.additional-users{
+    visibility: hidden;
+}
