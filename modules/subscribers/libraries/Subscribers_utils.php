@@ -14,7 +14,7 @@ class Subscribers_utils
             ->add_rules( 'email', 'required', 'valid::email' );        
         
         $subscriber->validate( $validation, true );
-        
+                
         return $subscriber;
     }
     
