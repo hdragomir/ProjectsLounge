@@ -14,64 +14,23 @@
             <div id="featured_projects">
                 <h2>Featured Projects</h2>
                 <ul>
-                    <li>
-                        <a href="#"><img class="project_thumb" src="images/project_thumb.png" alt="" /></a>
-                        <h3>Startup Days</h3>
-                        <p class="team_members"><a href="#">Cristi Teichner</a> | <a href="#">Cristina Putan</a> | <a href="#">Octavian Chis</a> | <a href="#">Adrian Spiac</a>
-    <a href="#">Cristian Antohe</a> | <a href="#">Alexandru Bleau</a></p>
-                        <p class="project_tags"><a href="#">great</a> <a href="#">things</a> <a href="#">together</a></p>
-                    </li>
-    
-                    <li>
-                        <a href="#"><img class="project_thumb" src="images/project_thumb.png" alt="" /></a>
-                        <h3>Startup Days</h3>
-                        <p class="team_members"><a href="#">Cristi Teichner</a> | <a href="#">Cristina Putan</a> | <a href="#">Octavian Chis</a> | <a href="#">Adrian Spiac</a>
-    <a href="#">Cristian Antohe</a> | <a href="#">Alexandru Bleau</a></p>
-                        <p class="project_tags"><a href="#">great</a> <a href="#">things</a> <a href="#">together</a></p>
-                    </li>
-    
-                    <li>
-                        <a href="#"><img class="project_thumb" src="images/project_thumb.png" alt="" /></a>
-                        <h3>Startup Days</h3>
-                        <p class="team_members"><a href="#">Cristi Teichner</a> | <a href="#">Cristina Putan</a> | <a href="#">Octavian Chis</a> | <a href="#">Adrian Spiac</a>
-    <a href="#">Cristian Antohe</a> | <a href="#">Alexandru Bleau</a></p>
-                        <p class="project_tags"><a href="#">great</a> <a href="#">things</a> <a href="#">together</a></p>
-                    </li>
+                   <?php echo Projects_utils::list_projects_view( $featured_projects ); ?>
                 </ul>
             </div>
             <div id="featured_members">
                 <h2>Featured Members</h2>
                 <ul>
-                    <li>
-                        <a href="#"><img src="images/member_thumb.png" alt="" /></a>
-                        <a href="#" class="member_name">Adrian Trif</a>
-                        <span class="descr">Front-end developer</span>
-                        <a href="#" class="involved_in">3 projects</a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="images/member_thumb.png" alt="" /></a>
-                        <a href="#" class="member_name">Adrian Trif</a>
-                        <span class="descr">Front-end developer</span>
-                        <a href="#" class="involved_in">3 projects</a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="images/member_thumb.png" alt="" /></a>
-                        <a href="#" class="member_name">Adrian Trif</a>
-                        <span class="descr">Front-end developer</span>
-                        <a href="#" class="involved_in">3 projects</a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="images/member_thumb.png" alt="" /></a>
-                        <a href="#" class="member_name">Adrian Trif</a>
-                        <span class="descr">Front-end developer</span>
-                        <a href="#" class="involved_in">3 projects</a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="images/member_thumb.png" alt="" /></a>
-                        <a href="#" class="member_name">Adrian Trif</a>
-                        <span class="descr">Front-end developer</span>
-                        <a href="#" class="involved_in">3 projects</a>
-                    </li>
+                    
+                    <?php foreach( $featured_members as $featured_member ): ?>
+                        <li>
+                            <a href="<?php echo $featured_member->local_url; ?>"><img src="<?php echo $featured_member->avatar_url; ?>" alt="" /></a>
+                            <a href="<?php echo $featured_member->local_url; ?>" class="member_name"><?php echo $featured_member; ?></a>
+                            <span class="descr"><?php echo $featured_member->tagline; ?></span>
+                            <a href="<?php echo $featured_member->local_url; ?>#Projects" class="involved_in"><?php $project_count_for_featured_member = count( $featured_member->projects );
+                                echo $project_count_for_featured_member, ' ', inflector::plural( 'project', $project_count_for_featured_member );
+                            ?></a>
+                        </li>
+                    <?php endforeach; ?>
                 </ul>
             </div>
         </div>

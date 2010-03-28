@@ -7,6 +7,9 @@ class User_Model extends Auth_User_Model {
         
         if( 'local_url' == $prop )
             return url::site( 'profiles/' . $this->id );
+            
+        if( 'avatar_url' == $prop )
+            return url::site( 'media/images/member_thumb_small.png' );
         
         return parent::__get( $prop );
     }
@@ -14,15 +17,18 @@ class User_Model extends Auth_User_Model {
     
     public function __toString(){
         
-        return current( explode( '@', $this->email ) );
+        return inflector::humanize( current( explode( '@', $this->email ) ) );
     }
 
     
     
     public function save(){
         
-        if( empty( $this->username ) && ! empty( $this->id ) )
-            $this->username = $this->id;
+        if( empty( $this->username ) )
+            if( ! empty( $this->id ) )
+                $this->username = $this->id;
+            else
+                $this->username = $this->email;
         
         return parent::save();
     }

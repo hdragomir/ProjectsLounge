@@ -26,6 +26,17 @@ class Projects_utils{
     }
     
     
+    public static function list_projects_view( $projects ){
+        
+        $content = '';
+        $view = View::factory( 'projects/list-item' );
+        foreach( $projects as $project )
+            $content .= $view->bind( 'project', $project );
+            
+        return $content;
+    }
+    
+    
     public static function projects_edit_validation( array $data ){
         
         $validation = new Validation( $data );

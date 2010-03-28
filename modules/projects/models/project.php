@@ -4,13 +4,16 @@ class Project_Model extends ORM{
     
     protected $belongs_to = array( 'project_type' );
     protected $has_and_belongs_to_many = array( 'users', 'tags' );
+    protected $sorting = array( 'id' => 'desc' );
     
     
     public function __get( $prop ){
         
-        if( 'local_url' == $prop ){
+        if( 'local_url' == $prop )
             return url::site( "projects/{$this->id}" );
-        }
+        
+        if( 'image_url' == $prop )
+            return url::site( 'media/images/project_thumb.png' );
         
         return parent::__get( $prop );
     }
