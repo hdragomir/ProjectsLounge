@@ -42,7 +42,7 @@
         <li class="last"><a href="<?php echo url::site( 'projects/add' ); ?>">Add new project</a></li>
     </ul>
 
-    <div id="main-content" class="section">
+    <div id="main-content">
     <?php
         if( isset( $content ) )
             echo $content;

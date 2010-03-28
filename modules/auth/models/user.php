@@ -2,6 +2,23 @@
 
 class User_Model extends Auth_User_Model {
     
+    
+    public function __get( $prop ){
+        
+        if( 'local_url' == $prop )
+            return url::site( 'profiles/' . $this->id );
+        
+        return parent::__get( $prop );
+    }
+
+    
+    public function __toString(){
+        
+        return current( explode( '@', $this->email ) );
+    }
+
+    
+    
     public function save(){
         
         if( empty( $this->username ) && ! empty( $this->id ) )

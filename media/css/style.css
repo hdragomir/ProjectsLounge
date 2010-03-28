@@ -51,18 +51,16 @@ table {
 body {
 	background: #fff url("../images/bg.gif") repeat-x;
 	color: #333;
-	font: normal 14px/1.5 Tahoma, Arial, sans-serif;
+	font: normal 12px/1.5 Tahoma, Arial, sans-serif;
 }
 #wrapper {
 	position: relative;
 	width: 960px;
 	margin: 0 auto;
 }
-
 .pad{
     padding: 10px;
 }
-
 /* Typography
 -------------------------------------------------------------------------------------------------------------- */
 p {
@@ -107,7 +105,6 @@ button.awesome,
 	-moz-border-radius: 15px;
 	-webkit-border-radius: 15px;
 	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
-    box-shadow: 0 1px 3px rgba(0,0,0,0, .5)''
 	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
 	text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
 	border-bottom: 1px solid rgba(0,0,0,0.25);
@@ -126,6 +123,10 @@ button.awesome:hover,
 {
 	background: #31aad3;
 }
+.big {
+	font-size: 18px;
+	margin: 0 0 30px;
+}
 
 /* Header 
 -------------------------------------------------------------------------------------------------------------- */
@@ -136,12 +137,15 @@ button.awesome:hover,
 	height: 125px;
 	padding-top: 55px;
 }
+#branding {
+	float: left;
+	display: block;
+}
 #login {
 	display: block;
 	position: absolute;
 	top: 7px;
 	right: 0px;
-	font-size: 12px;
 	color: #fff;
 }
 #search {
@@ -155,15 +159,6 @@ button.awesome:hover,
 #search p {
 	margin: 0;
 }
-
-#search fieldset{
-    padding: 0;
-}
-
-#search input{
-    border: none;
-}
-
 #search_field {
 	float: left;
 	width: 200px;
@@ -171,7 +166,6 @@ button.awesome:hover,
 	padding-left: 10px;
 	border: none;
 	background: #fcfcfc;
-	font-size: 12px;
 	color: #999;
 }
 #btn_search {
@@ -213,6 +207,9 @@ button.awesome:hover,
 	width: 170px;
 	background: url("../images/btn_add_project.png") no-repeat;
 }
+#nav li.last:hover {
+	background: url("../images/btn_add_project_hover.png") no-repeat;
+}
 #nav li.last a {
 	width: 160px;
 	padding: 23px 10px 0 0;
@@ -220,6 +217,7 @@ button.awesome:hover,
 	font-family: "Trebuchet MS", Arial, sans-serif;
 	text-align: center;
 	font-style: italic;
+	text-decoration: none;
 	font-weight: bold;
 	color: #fff;
 	text-shadow: #000 0px 1px 1px;
@@ -231,13 +229,15 @@ button.awesome:hover,
 	float: left;
 	padding-bottom: 10px;
 	background: url("../images/welcome_bg.png") 0% 100% no-repeat;
+	font-size: 14px;
+	line-height: 1.8;
 }
 .section {
 	float: left;
 	width: 960px;
 	background: url("../images/section_bg.png") repeat-y;
 }
-#welcome .section {
+.section {
 	width: 940px;
 	padding: 10px;
 }
@@ -250,7 +250,7 @@ button.awesome:hover,
 	width: 960px;
 	padding-bottom: 14px;
 	background: url("../images/featured_bg.png") 0% 100% no-repeat;
-	margin: 0 0 20px;
+	margin: 0 0 30px;
 }
 .section2 {
 	float: left;
@@ -261,15 +261,29 @@ button.awesome:hover,
 	width: 940px;
 	padding: 10px;
 }
+
+/* Featured projects 
+-------------------------------------------------------------------------------------------------------------- */
 #featured_projects {
 	float: left;
 	width: 560px;
 	padding-right: 80px; 
 }
+#featured_projects h2 {
+	margin-bottom: 20px;
+}
 #featured_projects li {
 	float: left;
 	display: block;
-	margin: 0 0 20px;
+	width: 560px;
+	padding: 0 0 22px;
+	margin: 0 0 22px;
+	border-bottom: 1px solid #ededed;
+	color: #ddd;
+}
+#featured_projects li:last-child {
+	border: none;
+	margin-bottom: 0;
 }
 #featured_projects .project_thumb {
 	float: left;
@@ -280,10 +294,69 @@ button.awesome:hover,
 }
 #featured_projects h3 {
 	font-weight: bold;
+	font-size: 16px;
+	color: #333;
 }
+#featured_projects h3 a {
+	color: #333;
+}
+.project_tags {
+	margin-bottom: 0;
+}
+.project_tags a {
+	background: #ededed;
+	padding: 5px 10px;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	text-decoration: none;
+	color: #333;
+}
+.project_tags a:hover {
+	background: #77388e;
+	color: #fff;
+}
+
+/* Featured members 
+-------------------------------------------------------------------------------------------------------------- */
 #featured_members {
 	float: left;
 	width: 300px;
+	color: #333;
+}
+#featured_members h2 {
+	margin-bottom: 20px;
+}
+#featured_members .member_thumb {
+	float: left;
+	width: 60px;
+	height: 60px;
+	margin-right: 10px;
+}
+#featured_members li {
+	float: left;
+	display: block;
+	width: 300px;
+	padding: 0 0 18px;
+	margin: 0 0 18px;
+	border-bottom: 1px solid #ededed;
+}
+#featured_members li:last-child {
+	border: none;
+	margin-bottom: 0;
+}
+#featured_members h3 {
+	margin: 0;
+	font-size: 16px;
+	font-weight: bold;
+}
+#featured_members h3 a {
+	color: #333;
+}
+#featured_members .descr {
+	display: block;
+	text-transform: uppercase;
+	margin: 0 0 5px;
 }
 #reasons {
 	float: left;
@@ -328,6 +401,128 @@ button.awesome:hover,
 	font-size: 17px;
 }
 
+/* Project details 
+-------------------------------------------------------------------------------------------------------------- */
+#project_details {
+	float: left;
+	padding-bottom: 10px;
+	background: url("../images/project_details_bg.png") 0% 100% no-repeat;
+	line-height: 1.8;
+	margin: 0 0 30px;
+}
+#project_info {
+	float: left;
+	width: 560px;
+	padding-right: 80px;
+	overflow: hidden;
+}
+#project_info h1 {
+	margin: 0 0 5px;
+}
+#project_info .project_tags {
+	margin-bottom: 15px;
+}
+#info_list {
+	margin-bottom: 25px;
+}
+#info_list span {
+	padding-right: 10px;
+}
+#info_list strong {
+	font-weight: normal;
+	text-transform: uppercase;
+	color: #7c7c7c;
+}
+#project_logo {
+	float: left;
+	width: 60px;
+	height: 60px;
+	margin-right: 10px;
+}
+#screenshots h2 {
+	margin-bottom: 10px;
+	font-weight: bold;
+	font-size: 16px;
+}
+#screenshots img {
+	padding: 5px;
+	border: 1px solid #ddd;
+}
+#members_list {
+	float: left;
+	width: 300px;
+	color: #333;
+}
+#members_list h2 {
+	margin-bottom: 20px;
+	font-weight: bold;
+	font-size: 16px;
+}
+#members_list .member_thumb_small {
+	float: left;
+	width: 30px;
+	height: 30px;
+	margin-right: 10px;
+}
+#members_list li {
+	float: left;
+	display: block;
+	width: 300px;
+	margin: 0 0 15px;
+	border-bottom: 1px solid #ededed;
+}
+#members_list li:last-child {
+	border: none;
+	margin-bottom: 0;
+}
+#members_list h3 {
+	margin: 0;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 1.3;
+}
+#members_list .descr {
+	display: block;
+	text-transform: uppercase;
+	margin: 0 0 12px;
+	line-height: 1;
+}
+#members_list p {
+	margin: 0 0 10px;
+}
+
+/* Member details 
+-------------------------------------------------------------------------------------------------------------- */
+#member_details {
+	float: left;
+	padding-bottom: 10px;
+	background: url("../images/project_details_bg.png") 0% 100% no-repeat;
+	line-height: 1.8;
+	margin: 0 0 30px;
+}
+#member_details h2 {
+	font-size: 16px;
+	font-weight: bold;
+}
+#member_info {
+	float: left;
+	width: 560px;
+	padding-right: 80px;
+	overflow: hidden;
+}
+#member_info h1 {
+	margin: 0 0 5px;
+}
+#member_info .project_tags {
+	margin-bottom: 15px;
+}
+#member_thumb {
+	float: left;
+	width: 60px;
+	height: 60px;
+	margin-right: 10px;
+}
+
 
 /* Content 
 -------------------------------------------------------------------------------------------------------------- */
@@ -350,14 +545,19 @@ button.awesome:hover,
 	padding-top: 13px;
 	width: 960px;
 	margin: 0 auto;
-	font-size: 12px;
 	color: #fff;
 }
 #footer a {
 	color: #fff;
+}
+#footer span {
+	display: block;
+	float: left;
+	width: 400px;
 }
 #footer p {
 	float: right;
 	width: 500px;
 	text-align: right;
 	margin: 0;
+}
