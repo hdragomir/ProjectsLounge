@@ -5,7 +5,6 @@
             <h1><?php echo $project->name; ?></h1>
             
 
-
             <p id="info_list">
                 <span><strong>Project type:</strong> <?php echo $project->project_type; ?></span>
                 <span><strong>Time frame:</strong> 56 hours</span>
