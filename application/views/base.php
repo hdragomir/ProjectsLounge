@@ -50,13 +50,15 @@
             echo 'oups!';
         ?>
     </div>
-    <div id="footer_wrapper">
-        <div id="footer">
-        Copyright &#169; 2010 Projects Lounge. All rigts reserved
-        <p>
-            <a href="#">Home</a> | <a href="#">Projects</a> | <a href="#">Members</a> | <a href="#">About</a> | <a href="#">Contact</a>
-        </p>
-        </div>
+    <div id="push"></div>
+</div>
+
+<div id="footer_wrapper">
+    <div id="footer">
+    Copyright &#169; 2010 Projects Lounge. All rigts reserved
+    <p>
+        <a href="#">Home</a> | <a href="#">Projects</a> | <a href="#">Members</a> | <a href="#">About</a> | <a href="#">Contact</a>
+    </p>
     </div>
 </div>
 <!-- {execution_time} {memory_usage} {included_files} files included -->
