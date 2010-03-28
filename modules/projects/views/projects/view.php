@@ -1,7 +1,7 @@
 <div id="project_details">
     <div class="section">
         <div id="project_info">
-            <img id="project_logo" src="<?php echo url::site( 'media/images/ferta_logo.png' ); ?>" alt="<?php echo $project->name; ?>" />
+            <img id="project_logo" src="<?php echo $project->tiny_image_url; ?>" alt="<?php echo $project->name; ?>" />
             <h1><?php echo $project->name; ?></h1>
             
 
@@ -26,8 +26,8 @@
             <p id="project-description"><?php echo $project->description; ?></p>
 
             <div id="screenshots">
-                <h2>Screenshots</h2>
-                <img class="screenshot" src="<?php echo url::site( 'media/images/project_img.png' ); ?>" alt="" />
+                <h2>Screenshot</h2>
+                <img class="screenshot" src="<?php echo $project->image_url; ?>" alt="" />
             </div>
         </div>
 

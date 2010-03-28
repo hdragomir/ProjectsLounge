@@ -12,8 +12,15 @@ class Project_Model extends ORM{
         if( 'local_url' == $prop )
             return url::site( "projects/{$this->id}" );
         
-        if( 'image_url' == $prop )
-            return url::site( 'media/images/project_thumb.png' );
+        if( 'image_url' == $prop ){
+            $image_url = $this->has_image();
+            return url::site( $image_url ? $image_url : 'media/images/project_thumb.png' );
+        }
+        
+        if( 'tiny_image_url' == $prop ){
+            $image_url = $this->has_image( 'tiny' );
+            return url::site( $image_url ? $image_url : 'media/images/ferta_logo.png' );
+        }
         
         return parent::__get( $prop );
     }
@@ -27,6 +34,16 @@ class Project_Model extends ORM{
             return $this->set_tags( $value );
 
         return parent::__set( $prop, $value );
+    }
+    
+    
+    public function has_image( $which = 'screenshot' ){
+        $tail = $this->id ;
+        if( 'screenshot' != $which ){
+            $tail .= "-$which";
+        }
+        $image_url = 'media/project-images/' . $tail . '.jpg';
+        return file_exists( DOCROOT . '/' . $image_url ) ? $image_url : false;
     }
     
     

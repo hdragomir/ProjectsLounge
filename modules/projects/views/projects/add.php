@@ -1,5 +1,5 @@
 <h2 class="pad">Add a new Project</h2>
-<?php echo form::open( null, array( 'method' => 'post', 'class' => 'project-form' ) ); ?>
+<?php echo form::open_multipart( null, array( 'method' => 'post', 'class' => 'project-form' ) ); ?>
 <fieldset class="project-type">
     <legend>Project Type</legend>
     <?php foreach( $project_types as $type_id => $type_name ): ?>
@@ -30,16 +30,8 @@
 
 
 <?php echo form::open_fieldset( array( 'class' => 'images' ) ); ?>
-
-<?php echo form::close_fieldset(); ?>
-
-<?php echo form::open_fieldset( array( 'class' => 'additional-users' ) ); ?>
-    <?php echo form::legend( 'Additional Members' ); ?>
-    <p>Other members</p>
-    <p class="additional-member-wrapper"><label><span>Email</span> <?php echo form::input( array( 'name' => 'additional_user_emails[]',
-                                   'type' => 'email' ) ); ?></label>
-    <label><span>Role</span> <?php echo form::input( 'additional_user_roles[]' ); ?></label></p>
-    
+    <p><label><span>Screenshot</span> <?php echo form::upload( 'screenshot' ); ?>
+    <p><label><span>Logo</span> <?php echo form::upload( 'logo' ); ?>
 <?php echo form::close_fieldset(); ?>
 
 
