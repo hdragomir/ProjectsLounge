@@ -49,9 +49,10 @@ class Auth_User_Model extends ORM {
 	 */
 	public function login(array & $array, $redirect = FALSE)
 	{
+        Kohana::log( 'debug', Kohana::debug( $array ) ) ;
 		$array = Validation::factory($array)
 			->pre_filter('trim')
-			->add_rules('username', 'required', 'length[4,127]')
+			->add_rules('username', 'required' )
 			->add_rules('password', 'required', 'length[5,42]');
 
 		// Login starts out invalid

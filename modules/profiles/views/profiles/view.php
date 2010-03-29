@@ -1,7 +1,7 @@
 <div id="member_details">
     <div class="section">
         <div id="member_info">
-            <img id="member_thumb" src="<?php echo url::site( 'media/images/member_thumb.png' ); ?>" alt="<?php echo $profile; ?>" />
+            <img id="member_thumb" src="<?php echo $profile->avatar_url ; ?>" alt="<?php echo $profile; ?>" />
             <h1><?php echo $profile; ?></h1>
             <p id="info_list">
                 <strong><?php echo $profile->tagline; ?></strong>
@@ -23,7 +23,7 @@
                 
                 <?php foreach( $connections as $connection ): ?>
                     <li>
-                        <a href="<?php echo $connection->local_url; ?>"><img class="member_thumb_small" src="<?php echo $user->avatar_url; ?>" alt="" /></a>
+                        <a href="<?php echo $connection->local_url; ?>"><img class="member_thumb_small" src="<?php echo $connection->avatar_url; ?>" alt="" /></a>
                         <h3><a href="<?php echo $connection->local_url; ?>"><?php echo $connection; ?></a></h3>
                         <span class="descr"><?php echo $connection->tagline; ?></span>
                     </li>

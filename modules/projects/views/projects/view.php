@@ -10,7 +10,7 @@
                 <span><strong>Time frame:</strong> 56 hours</span>
                 <span><strong>URL:</strong> <?php echo text::auto_link( $project->url ); ?></span>
                 <?php if( $project->user_can( $user, 'edit' ) ): ?>
-                    <a class="right" href="<?php echo $project->url, '/edit'; ?>" >Edit</a>
+                    <a class="right" href="<?php echo $project->local_url, '/edit'; ?>" >Edit</a>
                 <?php endif; ?>
             </p>
             <p class="project_tags">
@@ -36,7 +36,7 @@
                 
                 <?php foreach( $project->users as $member ): ?>
                     <li>
-                        <a href="<?php echo $member->local_url; ?>"><img class="member_thumb_small" src="<?php echo url::site( 'media/images/member_thumb_small.png' ); ?>" alt="" /></a>
+                        <a href="<?php echo $member->local_url; ?>"><img class="member_thumb_small" src="<?php echo $member->avatar_url; ?>" alt="" /></a>
                         <h3><a href="<?php echo $member->local_url; ?>"><?php echo $member; ?></a></h3>
                         <span class="descr"><?php echo $member->role_for_project( $project ); ?></span>
                     </li>

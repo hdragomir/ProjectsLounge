@@ -9,14 +9,17 @@ class User_Model extends Auth_User_Model {
             return url::site( 'profiles/' . $this->id );
             
         if( 'avatar_url' == $prop )
-            return url::site( 'media/images/member_thumb_small.png' );
+            return sprintf( 'http://www.gravatar.com/avatar/%s?s=64&d=identicon&r=X', md5( $this->username ) );
+        
+            #return url::site( 'media/images/member_thumb_small.png' );
         
         return parent::__get( $prop );
     }
 
     
     public function __toString(){
-        
+        if( $this->name )
+            return $this->name;
         return inflector::humanize( current( explode( '@', $this->email ) ) );
     }
 
