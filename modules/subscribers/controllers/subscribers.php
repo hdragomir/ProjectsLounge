@@ -21,7 +21,7 @@ class Subscribers_Controller extends Template_Controller{
         if( $post = $this->input->post( 'subscriber' ) )
         {
             $subscriber = Subscribers_utils::add_subscriber( $post );
-            if ( $subscriber->saved() )
+            if ( $subscriber->saved )
                 url::redirect( 'http://projectslounge.com/thanks.html' );
             else
                 url::redirect( 'http://projectslounge.com/error.html' );
