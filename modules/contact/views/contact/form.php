@@ -5,7 +5,7 @@
         
         <?php echo form::open(); ?>
         
-        <p><?php echo form::label( 'contact[email]', 'You name' ), form::input( 'contact[email]' ); ?>
+        <p><?php echo form::label( 'contact[email]', 'Your email' ), form::input( 'contact[email]' ); ?>
         
         <p><?php echo form::label( 'contact[subject]', 'Subject' ), form::input( 'contact[subject]' ); ?>
         
