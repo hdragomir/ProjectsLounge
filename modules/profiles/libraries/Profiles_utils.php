@@ -11,4 +11,15 @@ class Profiles_utils{
             $user->save();
         }
     }
+    
+    
+    public static function list_profiles_view( $profiles ){
+        
+        $content = '';
+        $view = View::factory( 'profiles/list-item' );
+        foreach( $profiles as $profile )
+            $content .= $view->bind( 'profile', $profile );
+            
+        return $content;
+    }
 }

@@ -7,23 +7,10 @@ class Profiles_Controller extends Template_Controller{
     
     public function index(){
         
-        /*foreach( array(
-            'hello@aditrif.com',
-            'hello@vladgeorgescu.com',
-            'hello@raduceuca.com',
-            'horia@hdragomir.com',
-            'sitov.cristian@gmail.com',
-            'andrei.talpos@mbdragan.com',
-            'corina_saftescu@yahoo.com'
-        ) as $email ){
-            $user = ORM::factory( 'user' );
-            $user->email = $email;
-            $user->password = 'valiugteam';
-            $user->roles = array( 1, 2 );
-            $user->save();
-        }*/
+        $this->template->content = View::factory( 'profiles/list' )
+            ->bind( 'profiles', ORM::factory( 'user' )->find_all() );
+        
     }
-    
     
     public function __call( $method, array $arguments ){
         
