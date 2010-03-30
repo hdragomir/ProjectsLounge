@@ -63,9 +63,9 @@ class Profiles_Controller extends Template_Controller{
 	//Attempt login if form was submitted
 	if ($post = $this->input->post()) {
 		if (ORM::factory('user')->login($post)) {
-			url::redirect($this->session->get('requested_url'));
+			url::redirect( '' );
 		} else {
-			$view->username = $post['username']; //Redisplay username (but not password) when form is redisplayed.
+            $view->username = $post['username'];
 			$view->message = in_array('required', $post->errors()) ? 'Username and password are required.' : 'Invalid username and/or password.';
 		}
 	}

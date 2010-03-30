@@ -1,3 +1,4 @@
+
 <h2 class="pad">Add a new Project</h2>
 <?php echo form::open_multipart( null, array( 'method' => 'post', 'class' => 'project-form' ) ); ?>
 <fieldset class="project-type">
@@ -11,7 +12,7 @@
 
 <?php echo form::open_fieldset( array( 'class' => 'required-info' ) ); ?>
     <?php echo form::legend( 'Project Info' ); ?>
-
+    
     <p class="important-stuff"><label><span>Project Name</span> <?php echo form::input( 'project[name]' ); ?></label>
        <label><span>Project URL</span> <?php echo form::input( 'project[url]' ); ?></label></p>
     <p><label><span>Brief Description</span><br /><?php echo form::textarea( array( 'name' => 'project[description]',
@@ -30,8 +31,8 @@
 
 
 <?php echo form::open_fieldset( array( 'class' => 'images' ) ); ?>
-    <p><label><span>Screenshot</span> <?php echo form::upload( 'screenshot' ); ?>
-    <p><label><span>Logo</span> <?php echo form::upload( 'logo' ); ?>
+    <p><label><span>Screenshot</span> <?php echo form::upload( 'screenshot' ); ?></label></p>
+    <p><label><span>Logo</span> <?php echo form::upload( 'logo' ); ?></label></p>
 <?php echo form::close_fieldset(); ?>
 
 

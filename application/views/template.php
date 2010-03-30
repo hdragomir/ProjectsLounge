@@ -5,17 +5,13 @@
 <meta charset="UTF-8" />
 <title>Projects Lounge</title>
 
-<meta http-equiv="X-UA-Compatible" content="chrome=1" />
-
 <?php echo html::stylesheet( 'media/css/style.css' ); ?>
 <?php echo html::stylesheet( HTMLPage::$styles ); ?>
 
 </head>
 
-<body>
-
+<body class="<?php echo HTMLPage::body_class(); ?>">
 <div id="wrapper">
-
     <div id="header">
         <a id="branding" href="<?php echo url::base(); ?>" title="Projects Lounge"><img src="<?php echo url::site( 'media/images/projectslounge.png' ); ?>" alt="Projects Lounge" /></a>
     
@@ -29,9 +25,9 @@
                 </p>
             </fieldset>
         </form>
+        <?php echo View::factory( 'profiles/user-top-menu' ); ?>
     </div>
     
-    <a id="login" href="<?php echo url::site( 'login' ); ?>">Login to your account</a>
     
     
     <ul id="nav">

@@ -46,6 +46,16 @@ table {
 	clear: both;
 }
 
+
+.right{
+    float: right;
+}
+
+.left{
+    float: left;
+}
+
+
 /* Layout
 -------------------------------------------------------------------------------------------------------------- */
 html {
@@ -149,13 +159,19 @@ button.awesome:hover,
 	float: left;
 	display: block;
 }
-#login {
+#user-top-menu {
 	display: block;
 	position: absolute;
 	top: 7px;
 	right: 0px;
-	color: #fff;
+	color: #ccc;
 }
+
+#user-top-menu a{
+    color: white;
+}
+
+
 #search {
 	float: right;
 	width: 286px;
@@ -280,7 +296,7 @@ button.awesome:hover,
 #featured_projects h2 {
 	margin-bottom: 20px;
 }
-#featured_projects li {
+.projects-list li {
 	float: left;
 	display: block;
 	width: 560px;
@@ -289,23 +305,23 @@ button.awesome:hover,
 	border-bottom: 1px solid #ededed;
 	color: #ddd;
 }
-#featured_projects li:last-child {
+.projects-list li:last-child {
 	border: none;
 	margin-bottom: 0;
 }
-#featured_projects .project_thumb {
+.projects-list .project_thumb {
 	float: left;
 	width: 212px;
 	padding: 3px;
 	border: 1px solid #ddd;
 	margin-right: 10px;
 }
-#featured_projects h3 {
+.projects-list h3 {
 	font-weight: bold;
 	font-size: 16px;
 	color: #333;
 }
-#featured_projects h3 a {
+.projects-list h3 a {
 	color: #333;
 }
 .project_tags {

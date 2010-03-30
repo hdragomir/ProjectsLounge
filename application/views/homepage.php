@@ -10,7 +10,7 @@
     <div class="section">
         <div id="featured_projects">
             <h2>Featured Projects</h2>
-            <ul>
+            <ul class="projects-list">
                <?php echo Projects_utils::list_projects_view( $featured_projects ); ?>
             </ul>
         </div>
