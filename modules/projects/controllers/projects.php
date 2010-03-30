@@ -2,7 +2,7 @@
 
 class Projects_Controller extends Template_Controller{
     
-    public $template = 'base';
+    
     
 
     public function __construct(){

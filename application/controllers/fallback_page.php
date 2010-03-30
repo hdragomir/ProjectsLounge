@@ -1,7 +1,7 @@
 <?php defined('SYSPATH') OR die('No direct access allowed.');
 
 class Fallback_Page_Controller extends Template_Controller {
-    public $template = 'base';
+    
 
     public function find_view(){
         $path = implode( '_', Router::$segments );

@@ -1,4 +1,4 @@
-<div class="section-wrapper" id="featured">
+<div class="section-wrapper">
     <div class="section">
     
         <h2>We just rock!</h2>

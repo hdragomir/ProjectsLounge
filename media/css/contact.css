@@ -1,0 +1,13 @@
+form label{
+    width: 120px;
+    display: inline-block;
+}
+
+form textarea{
+    width: 300px;
+    height: 150px;
+}
+
+form input{
+    width: 180px;
+}

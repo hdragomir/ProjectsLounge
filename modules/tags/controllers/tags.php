@@ -2,7 +2,7 @@
 
 class Tags_Controller extends Template_Controller{
     
-    public $template = 'base';
+    
     
     
     public function index()
