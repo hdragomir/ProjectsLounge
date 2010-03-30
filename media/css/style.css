@@ -234,31 +234,30 @@ button.awesome:hover,
 /* Homepage 
 -------------------------------------------------------------------------------------------------------------- */
 #welcome {
-	float: left;
 	padding-bottom: 10px;
-	background: url("../images/welcome_bg.png") 0% 100% no-repeat;
 	font-size: 14px;
 	line-height: 1.8;
 }
 .section {
 	float: left;
-	width: 960px;
-	background: url("../images/section_bg.png") repeat-y;
-}
-.section {
 	width: 940px;
 	padding: 10px;
+	background: url("../images/section_bg.png") repeat-y;
 }
 #welcome h1 {
 	font-weight: normal;
 	margin-bottom: 20px;
 }
 #featured {
-	float: left;
-	width: 960px;
-	padding-bottom: 14px;
-	background: url("../images/featured_bg.png") 0% 100% no-repeat;
-	margin: 0 0 30px;
+	
+	
+}
+.section-wrapper{
+    float: left;
+    width: 960px;
+    background: url("../images/featured_bg.png") 0% 100% no-repeat;
+    padding-bottom: 14px;
+    margin: 0 0 30px;
 }
 .section2 {
 	float: left;
