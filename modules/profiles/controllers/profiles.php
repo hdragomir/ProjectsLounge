@@ -63,7 +63,9 @@ class Profiles_Controller extends Template_Controller{
         $this->template->content = $view;
     }
 
-    public function register(){
+    public function logout(){
         
+        Auth::instance()->logout();
+        url::redirect();
     }
 }
